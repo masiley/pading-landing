@@ -10,7 +10,7 @@ export default function Why() {
             <div className="earth">
                 <img className="earth-img" src={mappoints} alt="meeting of friends thanks to travel"/>
                 <div className="earth-text">
-                    <h2>The travel comparator built for long-distance friendships and family</h2>
+                    <h2>The travel comparator built for long-distance friendships and families</h2>
                 </div>
             </div>
             <div className="why-to-use-it">
@@ -21,7 +21,7 @@ export default function Why() {
                 </div>
                 <div className="why-to-use-it-text">
                     <div className="why-to-use-it-title">
-                        <h3>Why to use it?</h3>
+                        <h3>Why to use pading?</h3>
                     </div>
                     <div className="why-to-use-it-content">
                         <div className="why-to-use-it-content-card">           
@@ -30,7 +30,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h4>Save Time</h4>
-                                <p><b>In just one search</b>, you and your team find your next common destination</p>
+                                <p><b>In just one search</b>, you and your team can find your next common destination</p>
                             </div>
                         </div>
                         <div className="why-to-use-it-content-card">

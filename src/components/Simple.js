@@ -18,8 +18,8 @@ export default function Simple() {
                     </video>
                 </div>
                 <div className="simple-solution-content">
-                    <h3>Simple solution for complex connections!</h3>
-                    <p>Planning an Erasmus meeting, joining friends living abroad, gathering with family, it is often as exciting as complex. Pading is as simple solution built to bring you closer with your friends and family</p>
+                    <h3>Simple solutions for complexed connections!</h3>
+                    <p>Planning an Erasmus meeting, joining friends living abroad, gathering with family. Pading is as simple solution built to bring you closer with your friends and family</p>
                 </div>
 
             </div>

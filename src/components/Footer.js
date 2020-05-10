@@ -83,7 +83,7 @@ export default class Footer extends React.Component {
             <div className="footer-menu-email">
               <h4>Trying this app</h4>
               <p>
-                Explore the next destination to meet with your friends and
+                Explore the next destination you would like to meet with your friends and
                 family
               </p>
               <div className="footer-menu-email-form">
