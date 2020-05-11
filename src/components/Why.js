@@ -9,9 +9,6 @@ export default function Why() {
         <div className="wrapper">
             <div className="earth">
                 <img className="earth-img" src={mappoints} alt="meeting of friends thanks to travel"/>
-                <div className="earth-text">
-                    <h2>The travel comparator built for long-distance friendships and family</h2>
-                </div>
             </div>
             <div className="why-to-use-it">
                 <div className="why-to-use-it-gif">

@@ -16,9 +16,8 @@
       flex-direction: column;
       text-align: left;
       background-color: #53c2cd;
-      max-height: 400px;
       border-radius: 75px 0px 0px 75px;
-      padding: 50px 10px 50px 10px;
+      padding: 50px 10px 45px 10px;
       h3 {
         color: white;
       }
@@ -35,6 +34,7 @@
         .how-to-use-it-number {
           width: 20%;
           text-align: center;
+          margin-right: 50px;
         }
         .how-to-use-it-details {
           width: 80%;

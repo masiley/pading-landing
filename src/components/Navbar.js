@@ -111,13 +111,6 @@ export default class NavBar extends React.Component {
             >
               <i className="fab fa-instagram"></i>
             </a>
-            <a
-              href="https://www.linkedin.com/company/padingapp/about/?viewAsMember=true"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
           </div>
 
           <div className="email-form email-form-background">
