@@ -48,6 +48,23 @@
 // extra-small screens
 @media (max-width: 991px) {
   .cards-trip {
+    .card-trip {
+      .card-trip-infos {
+        .card-trip-city {
+          h5 {
+            font-size: 12px;
+          }
+        }
+        .card-trip-pricing {
+          h5 {
+            font-size: 12px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
     .cards-trip-content {
       height: 150px;
     }

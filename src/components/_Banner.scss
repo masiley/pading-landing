@@ -1,6 +1,7 @@
 .banner {
   display: flex;
   height: calc(100vh - 70px);
+  margin-top: 70px;
   .valueprop {
     display: flex;
     flex-direction: column;
@@ -14,75 +15,238 @@
       }
     }
   }
+  .email-form-banner {
+    position: relative;
+    text-align: center;
+    background: white;
+    max-width: 400px;
+    input {
+      font-family: "Arimo", sans-serif;
+      height: 44px;
+      border: none;
+      font-weight: 400;
+      background: white;
+      color: #373737;
+      border: solid #29b3c1;
+      text-align: left;
+      border-radius: 20px;
+      font-size: 14px;
+      padding: 10px;
+      &:focus {
+        transition-duration: 0.5s;
+        outline: 0;
+      }
+    }
+    .btn-blue {
+      position: absolute;
+      right: 0px;
+      height: 44px;
+    }
+  }
   .gif {
     display: flex;
+    z-index: -2;
     .banner-img {
       max-height: 400px;
     }
   }
 }
 
-// extra-small screens
-@media (max-width: 900px) {
+// landscape
+@media (orientation: landscape) {
+  .banner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    .valueprop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// small mobile screens landscape
+@media (min-width: 550px) and (orientation: landscape) {
+  .banner {
+    .valueprop {
+      .valueprop-title {
+        h1 {
+          color: #29b3c1;
+        }
+      }
+      .valueprop-details {
+        p {
+          font-size: 14px;
+          margin: 5px 25px 5px 25px;
+        }
+      }
+    }
+    .email-form-banner {
+      input {
+        width: 320px;
+        &:focus {
+          width: 350px;
+        }
+      }
+    }
+    .gif {
+      display: none;
+    }
+  }
+}
+
+// mobile screens landscape
+@media (min-width: 601px) and (orientation: landscape) {
+  .banner {
+    .valueprop {
+      .valueprop-details {
+        margin: 5px 75px 5px 75px;
+      }
+    }
+  }
+}
+
+// small tablet screens landscape
+@media (min-width: 601px) and (min-height: 500px) and (orientation: landscape) {
+  .banner {
+    .valueprop {
+      margin-top: 100px;
+      .valueprop-title {
+        margin: 5px 40px 5px 40px;
+      }
+      .valueprop-details {
+        margin: 5px 40px 5px 40px;
+      }
+    }
+    .gif {
+      display: block;
+      margin-top: 50px;
+      .banner-img {
+        max-height: 350px;
+      }
+    }
+  }
+}
+
+// tablet screens landscape
+@media (min-width: 950px) and (orientation: landscape) {
+  .banner {
+    .valueprop {
+      margin-top: 100px;
+      width: 50%;
+      .valueprop-title {
+        background-color: #29b3c1;
+        max-height: 250px;
+        border-radius: 50px;
+        padding: 20px 10px 20px 10px;
+        margin: 0px 5px 10px 5px;
+        h1 {
+          color: white;
+        }
+      }
+      .valueprop-details {
+        margin: 0px 25px 10px 25px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .email-form-banner {
+      display: none;
+    }
+    .gif {
+      margin-top: 50px;
+      width: 50%;
+      .banner-img {
+        max-height: 420px;
+      }
+    }
+  }
+}
+
+// portrait
+@media (orientation: portrait) {
   .banner {
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 70px;
     .valueprop {
-      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// small mobile screens portrait
+@media (min-width: 300px) and (orientation: portrait) {
+  .banner {
+    .valueprop {
       .valueprop-title {
+        margin-top: 0px;
         h1 {
           color: #29b3c1;
-          font-size: 30px;
         }
       }
       .valueprop-details {
-        margin: 0px 50px 0px 50px;
+        p {
+          font-size: 14px;
+        }
       }
       .email-form-banner {
-        position: relative;
-        text-align: center;
-        background: white;
-        max-width: 500px;
-        margin-left: 20px;
         input {
-          font-family: "Arimo", sans-serif;
-          width: 300px;
-          height: 44px;
-          border: none;
-          font-weight: 400;
-          background: white;
-          color: #373737;
-          border: solid #29b3c1;
-          text-align: left;
-          border-radius: 20px;
-          font-size: 14px;
-          padding: 10px;
+          width: 270px;
           &:focus {
-            width: 340px;
-            transition-duration: 0.5s;
-            outline: 0;
+            width: 300px;
           }
         }
-        .btn-blue {
-          position: absolute;
-          right: 50px;
-          font-family: "Arimo", sans-serif;
-          height: 44px;
-          margin-right: 15px;
-          border-radius: 50px;
-          border: 0;
-          color: white;
-          background-color: #29b3c1 !important;
+      }
+    }
+    .gif {
+      .banner-img {
+        max-height: 150px;
+      }
+    }
+  }
+}
+
+// mobile screens portrait
+@media (min-width: 321px) and (orientation: portrait) {
+  .banner {
+    .valueprop {
+      .valueprop-details {
+        margin: 10px 20px 10px 20px;
+        p {
           font-size: 14px;
-          background: #fff;
-          font-weight: 700;
-          &:hover {
-            background-color: #53c2cd !important;
-          }
+        }
+      }
+    }
+    .gif {
+      margin-top: 10px;
+      .banner-img {
+        max-height: 250px;
+      }
+    }
+  }
+}
+
+// small tablet screens portrait
+@media (min-width: 416px) and (orientation: portrait) {
+  .banner {
+    .valueprop {
+      .valueprop-details {
+        margin: 0px 50px 0px 50px;
+        p {
+          font-size: 16px;
+        }
+      }
+      .email-form-banner {
+        margin-top: 40px;
+        input {
+          width: 300px;
           &:focus {
-            outline: none;
+            width: 340px;
           }
         }
       }
@@ -95,53 +259,42 @@
   }
 }
 
-// small screens
-@media (min-width: 901px) {
+// tablet screens portrait
+@media (min-width: 850px) and (orientation: portrait) {
   .banner {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 70px;
     .valueprop {
-      width: 50%;
-      margin: 200px 0px 150px 20px;
+      margin: 0px 100px 0px 100px;
       .valueprop-title {
-        background-color: #29b3c1;
-        max-height: 250px;
-        border-radius: 50px;
-        padding: 20px 10px 20px 10px;
-        margin: 0px 5px 10px 5px;
+        margin-top: 50px;
         h1 {
-          font-size: 25px;
+          font-size: 50px;
         }
       }
       .valueprop-details {
-        margin: 0px 25px 10px 25px;
+        margin: 0px 50px 0px 50px;
+        p {
+          font-size: 16px;
+        }
+      }
+      .email-form-banner {
+        display: none;
       }
     }
-    .email-form-banner {
-      display: none;
-    }
     .gif {
-      width: 50%;
+      margin-top: 50px;
       .banner-img {
-        max-height: 420px;
-        margin-left: 10px;
+        max-height: 500px;
       }
     }
   }
 }
 
-// normal and big screens
+// laptop and computer screens
 @media (min-width: 1201px) {
   .banner {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 70px;
     .valueprop {
       width: 45%;
-      margin: 150px 0px 150px 20px;
+      margin: 250px 0px 250px 20px;
       .valueprop-title {
         margin: 0px 5px 10px 5px;
         h1 {
@@ -155,7 +308,7 @@
     .gif {
       width: 55%;
       .banner-img {
-        max-height: 500px;
+        max-height: 400px;
         margin-left: 100px;
       }
     }
