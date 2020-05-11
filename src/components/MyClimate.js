@@ -7,8 +7,8 @@ export default function Simple() {
         <div className="wrapper">
             <div className="myclimate">
                 <div className="myclimate-content">
-                    <h4>Trying to be eco responsible</h4>
-                    <p>If like us, you face inner conflict between your passion for travelling and your concerns for ecology, we recommand you to compensate your Co2 emissions with our partner <a href="https://co2.myclimate.org/en/flight_calculators/new" target="blank">myClimate.org</a></p>
+                    <h4>Trying to be eco responsible?</h4>
+                    <p>If like us, you face inner conflict between your passion for travelling and your concerns for ecology, we recommand you compensate your Co2 emissions with our partner <a href="https://co2.myclimate.org/en/flight_calculators/new" target="blank">myClimate.org</a></p>
                     <a href="https://co2.myclimate.org/en/flight_calculators/new" target="blank">
                     <button className="myclimate-btn-blue">My Climate</button></a>
                 </div>
