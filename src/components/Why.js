@@ -18,7 +18,7 @@ export default function Why() {
                 </div>
                 <div className="why-to-use-it-text">
                     <div className="why-to-use-it-title">
-                        <h3>Why to use it?</h3>
+                        <h3>Why to use pading?</h3>
                     </div>
                     <div className="why-to-use-it-content">
                         <div className="why-to-use-it-content-card">           
@@ -27,7 +27,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h4>Save Time</h4>
-                                <p><b>In just one search</b>, you and your team find your next common destination</p>
+                                <p><b>In just one search</b>, you and your team can find your next common destination</p>
                             </div>
                         </div>
                         <div className="why-to-use-it-content-card">

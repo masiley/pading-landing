@@ -76,7 +76,7 @@ export default function Cards() {
                                 <h4>You are travelling alone? Enjoy Pading to find the best travel offers!</h4>
               
               
-                                <p>If you are a lonely traveller, let us bring to you with some creative new ideas for your next trip</p>
+                                <p>Let us show you some creative new ideas for your next trip</p>
                             </div>
                         </div>
                     </div>
