@@ -28,7 +28,8 @@ const CustomForm = ({ status, message, onValidated }) => {
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            footer: '<p>but you can still follow us on social media!</p>',
+            textAlign: 'center',
+            footer: '<p>You can still follow us on social media!</p>',
             customClass:{
               cancelButton: 'cancel-button-class'
             }
@@ -40,12 +41,12 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'success',
             title: 'Thank you for believing in us! You are now registered',
-            confirmButtonText: 'Thanks',
+            confirmButtonText: 'Cool',
             confirmButtonColor: '#29b3c1',
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            footer: '<p>You can also follow us on social media!</p>',
+            footer: '<p>You can also follow us on social media :)</p>',
             customClass:{
               cancelButton: 'cancel-button-class'
             }
@@ -73,6 +74,10 @@ const CustomForm = ({ status, message, onValidated }) => {
 const SweetAlert = withSwalInstance(swal);
 
 export default class Footer extends React.Component {
+  state = {
+    faq: false
+  }
+
   render() {
     const url =
       "https://pading.us8.list-manage.com/subscribe/post?u=f662f9f87cc780ecd97294f34&amp;id=0ef42685e7";
@@ -81,7 +86,7 @@ export default class Footer extends React.Component {
         <div className="footer">
           <div className="footer-menu">
             <div className="footer-menu-email">
-              <h4>Trying this app</h4>
+              <h4>Trying Pading</h4>
               <p>
                 Explore the next destination you would like to meet with your friends and
                 family
@@ -118,7 +123,7 @@ export default class Footer extends React.Component {
               </div>
               <div className="footer-menu-contact">
                 <h4>Contact</h4>
-                <a href="mailto:louisburette@pading.eu">
+                <a href="mailto:contact@pading.eu" target="_blank">
                   <p>Contact us</p>
                 </a>
                 <div className="footer-social">

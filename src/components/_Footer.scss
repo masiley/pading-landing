@@ -10,7 +10,7 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      padding: 50px 20px 50px 20px;
+      padding: 50px 10px 50px 10px;
 
       h4 {
         color: white;
@@ -28,14 +28,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         .footer-menu-email-form {
           position: relative;
           text-align: right;
           background: #f49d11;
           input {
-            font-family: "Arimo", sans-serif;
-            width: 250px;
+            font-family: "Roboto", sans-serif;
             height: 44px;
             border: none;
             font-weight: 400;
@@ -46,7 +44,6 @@
             font-size: 14px;
             padding: 10px;
             &:focus {
-              width: 280px;
               transition-duration: 0.5s;
               outline: 0;
             }
@@ -55,7 +52,7 @@
         .btn-blue {
           position: absolute;
           right: -40px;
-          font-family: "Arimo", sans-serif;
+          font-family: "Roboto", sans-serif;
           height: 40px;
           margin-top: 2px;
           margin-right: 25px;
@@ -110,6 +107,60 @@
   }
 }
 
+// all screens landscape
+@media (min-width: 300px) and (orientation: landscape) {
+  .footer {
+    .footer-menu {
+      .footer-menu-email {
+        .footer-menu-email-form {
+          input {
+            width: 300px;
+            &:focus {
+              width: 330px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// small mobile screens portrait
+@media (min-width: 300px) and (orientation: portrait) {
+  .footer {
+    .footer-menu {
+      .footer-menu-email {
+        .footer-menu-email-form {
+          input {
+            width: 250px;
+            &:focus {
+              width: 280px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// small mobile screens portrait
+@media (min-width: 321px) and (orientation: portrait) {
+  .footer {
+    .footer-menu {
+      .footer-menu-email {
+        .footer-menu-email-form {
+          input {
+            width: 300px;
+            &:focus {
+              width: 330px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // extra-small screens
 @media (max-width: 900px) {
   .wrapper {
@@ -122,7 +173,7 @@
   }
 }
 
-// small, normal and big screens
+// normal and big screens
 @media (min-width: 901px) {
   .wrapper {
     .footer-menu {
