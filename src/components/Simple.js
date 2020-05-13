@@ -9,11 +9,6 @@ export default function Simple() {
             <div className="simple-solution">
                 <div className="simple-solution-gif">
                     <video className="catsbasket" autoPlay="autoplay" loop width="350px">
-                    {
-                        setTimeout(function(){
-                            document.querySelector(".catsbasket").pause()
-                          }, 11500)
-                    }
                         <source src={catsbasket} />
                     </video>
                 </div>

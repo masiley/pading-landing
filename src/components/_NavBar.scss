@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     min-width: 250px;
+    margin-left: -1px;
     height: 103%;
     background-color: white;
     border-radius: 0 50px 50px 0px;
@@ -51,8 +52,8 @@
     background: #f49d11;
     margin: 0px 40px 0px 40px;
     input {
-      font-family: "Arimo", sans-serif;
-      width: 250px;
+      font-family: "Roboto", sans-serif;
+      width: 300px;
       height: 44px;
       border: none;
       font-weight: 400;
@@ -63,7 +64,7 @@
       font-size: 14px;
       padding: 10px;
       &:focus {
-        width: 280px;
+        width: 330px;
         transition-duration: 0.5s;
         outline: 0;
       }
@@ -71,7 +72,7 @@
     .btn-blue {
       position: absolute;
       right: -40px;
-      font-family: "Arimo", sans-serif;
+      font-family: "Roboto", sans-serif;
       height: 40px;
       margin-top: 2px;
       margin-right: 25px;
