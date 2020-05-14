@@ -22,12 +22,12 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'info',
             title: 'You are already part of our community :)',
-            confirmButtonText: 'good to know',
+            confirmButtonText: 'ok',
             confirmButtonColor: '#29b3c1',
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            footer: '<p>but you can still follow us on social media!</p>',
+            footer: '<p>You can still follow us on social media!</p>',
             customClass:{
               cancelButton: 'cancel-button-class'
             }
@@ -39,12 +39,12 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'success',
             title: 'Thank you for believing in us! You are now registered',
-            confirmButtonText: 'Thanks',
+            confirmButtonText: 'cool',
             confirmButtonColor: '#29b3c1',
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            footer: '<p>You can also follow us on social media!</p>',
+            footer: '<p>You can also follow us on social media :)</p>',
             customClass:{
               cancelButton: 'cancel-button-class'
             }

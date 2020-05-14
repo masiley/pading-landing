@@ -10,6 +10,9 @@ export default function Why() {
             <div className="earth">
                 <img className="earth-img" src={mappoints} alt="meeting of friends thanks to travel"/>
             </div>
+            <div className="travel-comparator">
+                <h2>The travel comparator for long-distance friendships and family! </h2>
+            </div>
             <div className="why-to-use-it">
                 <div className="why-to-use-it-gif">
                     <video className="why-to-use-it-video" autoPlay="autoplay" loop>

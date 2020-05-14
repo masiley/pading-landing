@@ -22,7 +22,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'info',
             title: 'You are already part of our community :)',
-            confirmButtonText: 'Cool',
+            confirmButtonText: 'ok',
             confirmButtonColor: '#29b3c1',
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
@@ -39,7 +39,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'success',
             title: 'Thank you for believing in us! You are now registered',
-            confirmButtonText: 'Thanks',
+            confirmButtonText: 'cool',
             confirmButtonColor: '#29b3c1',
             allowEnterKey: 'true',
             allowOutsideClick: 'true',

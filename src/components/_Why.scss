@@ -9,10 +9,11 @@
       width: 100%;
     }
   }
+  .travel-comparator {
+    display: none;
+  }
   .why-to-use-it {
     display: flex;
-    .why-to-use-it-gif {
-    }
     .why-to-use-it-text {
       .why-to-use-it-content {
         display: flex;
@@ -247,8 +248,6 @@
 // laptop and computer screens
 @media (min-width: 1201px) {
   .wrapper {
-    .earth {
-    }
     .why-to-use-it {
       display: flex;
       flex-direction: row;
@@ -257,7 +256,7 @@
       margin: 0px 50px 100px 50px;
       .why-to-use-it-text {
         width: 60%;
-        margin-top: 150px;
+        margin-top: 200px;
       }
       .why-to-use-it-gif {
         width: 40%;
@@ -268,10 +267,27 @@
   }
 }
 
-@media (min-width: 1901px) {
+@media (min-width: 1601px) {
   .wrapper {
     .earth {
       display: none;
+    }
+    .travel-comparator {
+      position: absolute;
+      top: -200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 100%;
+      background-color: #29b3c1;
+      h2 {
+        color: white;
+        font-size: 40px;
+      }
+    }
+    .why-to-use-it {
+      margin-bottom: 200px;
     }
   }
 }

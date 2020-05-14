@@ -75,7 +75,7 @@
 }
 
 // normal and big screens
-@media (min-width: 1201px) {
+@media (min-width: 1101px) {
   .wrapper {
     .how-to-use-it {
       position: relative;
@@ -83,17 +83,17 @@
         margin: 0px 25px 10px 100px;
       }
       .how-to-use-it-content {
-        margin: 20px 100px 0px 100px;
       }
     }
   }
 }
 
-@media (max-width: 1430px) {
+@media (max-width: 1350px) {
   .how-to-use-it-video {
     display: none;
   }
 }
+
 @media (min-width: 1351px) {
   .wrapper {
     .how-to-use-it {
@@ -102,9 +102,9 @@
         position: absolute;
         border: none;
         top: 50px;
-        right: 70px;
+        right: 150px;
         .videoapp {
-          border-radius: 10px 10px 10px 10px;
+          border-radius: 5px 5px 0px 0px;
         }
       }
     }
