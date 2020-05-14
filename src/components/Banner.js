@@ -82,7 +82,7 @@ export default class Banner extends React.Component {
                         <h1>Find the perfect place to meet</h1>
                     </div>
                     <div className="valueprop-details">
-                        <p>Select your dates and departure cities you each come from. Explore all the destinations at the lowest price for you and the people you plan to meet</p>
+                        <p>Select your dates and the cities you would like to depart from. Explore all destinations at the lowest price for you and the people you plan to meet</p>
                     </div>
 
                     
