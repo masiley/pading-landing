@@ -322,3 +322,29 @@
     }
   }
 }
+
+// big screens
+@media (min-width: 1601px) {
+  .banner {
+    .valueprop {
+      width: 50%;
+      margin: 250px 0px 250px 20px;
+      .valueprop-title {
+        margin: 0px 5px 10px 5px;
+        h1 {
+          font-size: 40px;
+        }
+      }
+      .valueprop-details {
+        margin: 0px 100px 10px 100px;
+      }
+    }
+    .gif {
+      width: 50%;
+      .banner-img {
+        max-height: 600px;
+        margin-left: 100px;
+      }
+    }
+  }
+}
