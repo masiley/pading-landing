@@ -73,7 +73,7 @@ export default function Cards() {
             
                         <div className="col-xs-12 col-md-8 col-lg-8">
                             <div className="cards-trip-content">
-                                <h4>Are you travelling alone?</h4>
+                                <h3>Are you travelling alone?</h3>
                                 <h4>Enjoy Pading to find the best travel offers!</h4>
               
               
