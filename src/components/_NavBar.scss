@@ -112,6 +112,29 @@ button {
   }
 }
 
+.swal2-icon.swal2-success {
+  border-color: #3e936f !important;
+}
+.alertmail-social {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    background: transparent;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #29b3c1;
+  }
+  :hover {
+    color: #53c2cd;
+  }
+  i {
+    font-size: 40px;
+  }
+}
+
 // extra-small screens
 @media (max-width: 900px) {
   .email-form {
