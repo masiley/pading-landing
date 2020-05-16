@@ -23,16 +23,11 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'info',
             title: 'You are already part of our community :)',
-            confirmButtonText: 'ok',
-            confirmButtonColor: '#29b3c1',
+            showConfirmButton: false,
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            textAlign: 'center',
-            footer: '<p>You can still follow us on social media!</p>',
-            customClass:{
-              cancelButton: 'cancel-button-class'
-            }
+            html: '<br/><p>You can still follow us on social media!</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -41,15 +36,11 @@ const CustomForm = ({ status, message, onValidated }) => {
           {swal.fire({
             icon: 'success',
             title: 'Thank you for believing in us! You are now registered',
-            confirmButtonText: 'cool',
-            confirmButtonColor: '#29b3c1',
+            showConfirmButton: false,
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            footer: '<p>You can also follow us on social media :)</p>',
-            customClass:{
-              cancelButton: 'cancel-button-class'
-            }
+            html: '<br/><p>You can also follow us on social media :)</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
