@@ -1,5 +1,4 @@
 import React from 'react';
-import mappoints from '../img/mappoints.png';
 import happycats from '../img/happycats.mp4';
 import './_Why.scss';
 
@@ -7,9 +6,6 @@ import './_Why.scss';
 export default function Why() {
     return (
         <div className="wrapper">
-            <div className="earth">
-                <img className="earth-img" src={mappoints} alt="meeting of friends thanks to travel"/>
-            </div>
             <div className="travel-comparator">
                 <h2>The travel comparator for long-distance friendships and family! </h2>
             </div>
