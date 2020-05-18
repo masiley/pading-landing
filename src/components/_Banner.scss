@@ -1,249 +1,125 @@
-.banner {
+.hello {
   display: flex;
-  height: calc(100vh - 70px);
+  flex-direction: column;
+  flex-direction: justify-content;
+  align-items: align-items;
+  min-height: calc(100vh - 70px);
   margin-top: 70px;
-  .valueprop {
-    display: flex;
-    flex-direction: column;
-    .valueprop-title {
-      text-align: center;
-    }
-    .valueprop-details {
-      text-align: center;
-      p {
-        font-size: 16px;
-      }
+  .earth {
+    img {
+      width: 100%;
     }
   }
-  .email-form-banner {
-    position: relative;
-    text-align: center;
-    background: white;
-    max-width: 400px;
-    input {
-      font-family: "Roboto", sans-serif;
-      height: 44px;
-      min-width: 270px;
-      border: none;
-      font-weight: 400;
-      background: white;
-      color: #373737;
-      border: solid #29b3c1;
-      text-align: left;
-      border-radius: 20px;
-      font-size: 14px;
-      padding: 10px;
-      &:focus {
-        min-width: 300px;
-        transition-duration: 0.5s;
-        outline: 0;
-      }
-    }
-    .btn-blue {
-      position: absolute;
-      right: 0px;
-      height: 44px;
-    }
-  }
-  .gif {
-    display: flex;
-    z-index: -2;
-    .banner-img {
-      max-height: 400px;
-    }
-  }
-}
-
-.swal2-icon.swal2-success {
-  border-color: #3e936f !important;
-}
-.alertmail-social {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a {
-    background: transparent;
-    width: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #29b3c1;
-  }
-  :hover {
-    color: #53c2cd;
-  }
-  i {
-    font-size: 40px;
-  }
-}
-
-// landscape
-@media (orientation: landscape) {
   .banner {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
     .valueprop {
       display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
-
-// small mobile screens landscape
-@media (min-width: 550px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
+      flex-direction: column;
       .valueprop-title {
-        h1 {
-          color: #29b3c1;
-        }
+        text-align: center;
       }
       .valueprop-details {
-        p {
-          font-size: 14px;
-          margin: 5px 25px 5px 25px;
-        }
-      }
-    }
-    .email-form-banner {
-      input {
-        width: 32 0px;
-        &:focus {
-          width: 350px;
-        }
-      }
-    }
-    .gif {
-      display: none;
-    }
-  }
-}
-
-// mobile screens landscape
-@media (min-width: 601px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
-      .valueprop-details {
-        margin: 5px 75px 5px 75px;
-      }
-    }
-  }
-}
-
-// small tablet screens landscape
-@media (min-width: 601px) and (min-height: 500px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
-      margin-top: 100px;
-      .valueprop-title {
-        margin: 5px 40px 5px 40px;
-      }
-      .valueprop-details {
-        margin: 5px 40px 5px 40px;
-      }
-    }
-    .gif {
-      display: block;
-      margin-top: 50px;
-      .banner-img {
-        max-height: 350px;
-      }
-    }
-  }
-}
-
-// tablet screens landscape
-@media (min-width: 900px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
-      margin-top: 100px;
-      width: 50%;
-      .valueprop-title {
-        background-color: #29b3c1;
-        max-height: 250px;
-        border-radius: 50px;
-        padding: 20px 10px 20px 10px;
-        margin: 0px 5px 10px 5px;
-        h1 {
-          color: white;
-        }
-      }
-      .valueprop-details {
-        margin: 0px 25px 10px 25px;
+        text-align: center;
         p {
           font-size: 16px;
         }
       }
     }
     .email-form-banner {
-      display: none;
+      position: relative;
+      text-align: center;
+      background: transparent;
+      max-width: 400px;
+      input {
+        font-family: "Roboto", sans-serif;
+        height: 44px;
+        min-width: 270px;
+        border: none;
+        font-weight: 400;
+        background: white;
+        color: #373737;
+        border: solid #29b3c1;
+        text-align: left;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 10px;
+        &:focus {
+          min-width: 300px;
+          transition-duration: 0.5s;
+          outline: 0;
+        }
+      }
+      .btn-blue {
+        position: absolute;
+        right: 0px;
+        height: 44px;
+      }
     }
     .gif {
-      margin-top: 50px;
-      width: 50%;
-      .banner-img {
-        max-height: 420px;
-      }
-    }
-  }
-}
-
-// portrait
-@media (orientation: portrait) {
-  .banner {
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    .valueprop {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      z-index: -2;
+      .banner-img {
+        max-height: 400px;
+      }
+    }
+  }
+
+  .swal2-icon.swal2-success {
+    border-color: #3e936f !important;
+  }
+  .alertmail-social {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      background: transparent;
+      width: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: #29b3c1;
+    }
+    :hover {
+      color: #53c2cd;
+    }
+    i {
+      font-size: 40px;
     }
   }
 }
 
-// small mobile screens portrait
-@media (min-width: 300px) and (orientation: portrait) {
-  .banner {
-    .valueprop {
-      .valueprop-title {
-        margin-top: 0px;
-        h1 {
-          color: #29b3c1;
-        }
+// landscape
+@media (orientation: landscape) {
+  .hello {
+    .banner {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      .valueprop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      .valueprop-details {
-        p {
-          font-size: 14px;
-        }
-      }
-      .email-form-banner {
-        input {
-          width: 270px;
-          &:focus {
-            width: 300px;
+    }
+  }
+}
+
+// small mobile screens landscape
+@media (min-width: 550px) and (orientation: landscape) {
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-title {
+          h1 {
+            color: #29b3c1;
           }
         }
-      }
-    }
-    .gif {
-      .banner-img {
-        max-height: 150px;
-      }
-    }
-  }
-}
-
-// mobile screens portrait
-@media (min-width: 321px) and (orientation: portrait) {
-  .banner {
-    .valueprop {
-      .valueprop-details {
-        margin: 10px 20px 10px 20px;
-        p {
-          font-size: 14px;
+        .valueprop-details {
+          p {
+            font-size: 14px;
+            margin: 5px 25px 5px 25px;
+          }
         }
       }
       .email-form-banner {
@@ -254,11 +130,162 @@
           }
         }
       }
+      .gif {
+        display: none;
+      }
     }
-    .gif {
-      margin-top: 10px;
-      .banner-img {
-        max-height: 250px;
+  }
+}
+
+// mobile screens landscape
+@media (min-width: 601px) and (orientation: landscape) {
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-details {
+          margin: 5px 75px 5px 75px;
+        }
+      }
+    }
+  }
+}
+
+// small tablet screens landscape
+@media (min-width: 601px) and (min-height: 500px) and (orientation: landscape) {
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-title {
+          margin: 5px 40px 5px 40px;
+        }
+        .valueprop-details {
+          margin: 5px 40px 5px 40px;
+        }
+      }
+      .gif {
+        display: block;
+        margin-top: 50px;
+        .banner-img {
+          max-height: 350px;
+        }
+      }
+    }
+  }
+}
+
+// tablet screens landscape
+@media (min-width: 900px) and (orientation: landscape) {
+  .hello {
+    .banner {
+      .valueprop {
+        margin-top: 100px;
+        width: 50%;
+        .valueprop-title {
+          background-color: #29b3c1;
+          max-height: 250px;
+          border-radius: 50px;
+          padding: 20px 10px 20px 10px;
+          margin: 0px 5px 10px 5px;
+          h1 {
+            color: white;
+          }
+        }
+        .valueprop-details {
+          margin: 0px 25px 10px 25px;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+      .email-form-banner {
+        display: none;
+      }
+      .gif {
+        margin-top: 50px;
+        width: 50%;
+        .banner-img {
+          max-height: 420px;
+        }
+      }
+    }
+  }
+}
+
+// portrait
+@media (orientation: portrait) {
+  .hello {
+    .banner {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      .valueprop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// small mobile screens portrait
+@media (min-width: 300px) and (orientation: portrait) {
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-title {
+          margin-top: 0px;
+          h1 {
+            color: #29b3c1;
+          }
+        }
+        .valueprop-details {
+          p {
+            font-size: 14px;
+          }
+        }
+        .email-form-banner {
+          input {
+            width: 270px;
+            &:focus {
+              width: 300px;
+            }
+          }
+        }
+      }
+      .gif {
+        .banner-img {
+          max-height: 150px;
+        }
+      }
+    }
+  }
+}
+
+// mobile screens portrait
+@media (min-width: 321px) and (orientation: portrait) {
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-details {
+          margin: 10px 20px 10px 20px;
+          p {
+            font-size: 14px;
+          }
+        }
+        .email-form-banner {
+          input {
+            width: 320px;
+            &:focus {
+              width: 350px;
+            }
+          }
+        }
+      }
+      .gif {
+        margin-top: 10px;
+        .banner-img {
+          max-height: 250px;
+        }
       }
     }
   }
@@ -266,27 +293,29 @@
 
 // small tablet screens portrait
 @media (min-width: 416px) and (orientation: portrait) {
-  .banner {
-    .valueprop {
-      .valueprop-details {
-        margin: 0px 50px 0px 50px;
-        p {
-          font-size: 16px;
+  .hello {
+    .banner {
+      .valueprop {
+        .valueprop-details {
+          margin: 0px 50px 0px 50px;
+          p {
+            font-size: 16px;
+          }
         }
-      }
-      .email-form-banner {
-        margin-top: 40px;
-        input {
-          width: 300px;
-          &:focus {
-            width: 340px;
+        .email-form-banner {
+          margin-top: 40px;
+          input {
+            width: 300px;
+            &:focus {
+              width: 340px;
+            }
           }
         }
       }
-    }
-    .gif {
-      .banner-img {
-        max-height: 350px;
+      .gif {
+        .banner-img {
+          max-height: 350px;
+        }
       }
     }
   }
@@ -294,55 +323,31 @@
 
 // tablet screens portrait
 @media (min-width: 850px) and (orientation: portrait) {
-  .banner {
-    .valueprop {
-      margin: 0px 100px 0px 100px;
-      .valueprop-title {
+  .hello {
+    .banner {
+      .valueprop {
+        margin: 0px 100px 0px 100px;
+        .valueprop-title {
+          margin-top: 50px;
+          h1 {
+            font-size: 50px;
+          }
+        }
+        .valueprop-details {
+          margin: 0px 50px 0px 50px;
+          p {
+            font-size: 16px;
+          }
+        }
+        .email-form-banner {
+          display: none;
+        }
+      }
+      .gif {
         margin-top: 50px;
-        h1 {
-          font-size: 50px;
+        .banner-img {
+          max-height: 500px;
         }
-      }
-      .valueprop-details {
-        margin: 0px 50px 0px 50px;
-        p {
-          font-size: 16px;
-        }
-      }
-      .email-form-banner {
-        display: none;
-      }
-    }
-    .gif {
-      margin-top: 50px;
-      .banner-img {
-        max-height: 500px;
-      }
-    }
-  }
-}
-
-// laptop and computer screens
-@media (min-width: 1201px) {
-  .banner {
-    .valueprop {
-      width: 45%;
-      margin: 250px 0px 250px 20px;
-      .valueprop-title {
-        margin: 0px 5px 10px 5px;
-        h1 {
-          font-size: 35px;
-        }
-      }
-      .valueprop-details {
-        margin: 0px 25px 10px 25px;
-      }
-    }
-    .gif {
-      width: 55%;
-      .banner-img {
-        max-height: 400px;
-        margin-left: 100px;
       }
     }
   }
@@ -350,25 +355,27 @@
 
 // big screens
 @media (min-width: 1601px) {
-  .banner {
-    .valueprop {
-      width: 50%;
-      margin: 250px 0px 250px 20px;
-      .valueprop-title {
-        margin: 0px 5px 10px 5px;
-        h1 {
-          font-size: 40px;
+  .hello {
+    .banner {
+      .valueprop {
+        width: 50%;
+        margin: 250px 0px 250px 20px;
+        .valueprop-title {
+          margin: 0px 5px 10px 5px;
+          h1 {
+            font-size: 40px;
+          }
+        }
+        .valueprop-details {
+          margin: 0px 100px 10px 100px;
         }
       }
-      .valueprop-details {
-        margin: 0px 100px 10px 100px;
-      }
-    }
-    .gif {
-      width: 50%;
-      .banner-img {
-        max-height: 600px;
-        margin-left: 100px;
+      .gif {
+        width: 50%;
+        .banner-img {
+          max-height: 600px;
+          margin-left: 100px;
+        }
       }
     }
   }

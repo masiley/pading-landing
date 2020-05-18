@@ -1,14 +1,4 @@
 .wrapper {
-  position: relative;
-  .earth {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-    .earth-img {
-      width: 100%;
-    }
-  }
   .travel-comparator {
     display: none;
   }
@@ -56,21 +46,18 @@
 // small mobile screens landscape
 @media (min-width: 500px) and (orientation: landscape) {
   .wrapper {
-    .earth {
-      top: -110px;
-    }
     .why-to-use-it {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top: 50px;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
       }
       .why-to-use-it-gif {
         width: 100%;
@@ -79,33 +66,6 @@
           max-width: 400px;
         }
       }
-    }
-  }
-}
-
-// mobile screens landscape
-@media (min-width: 650px) and (orientation: landscape) {
-  .wrapper {
-    .earth {
-      top: -150px;
-    }
-  }
-}
-
-// small tablet screens landscape
-@media (min-width: 950px) and (orientation: landscape) {
-  .wrapper {
-    .earth {
-      top: -200px;
-    }
-  }
-}
-
-// tablet screens landscape
-@media (min-width: 1200px) and (orientation: landscape) {
-  .wrapper {
-    .earth {
-      top: -265px;
     }
   }
 }
@@ -127,22 +87,18 @@
 // small mobile screens portrait
 @media (max-width: 320px) and (orientation: portrait) {
   .wrapper {
-    .earth {
-      top: -80px !important;
-    }
     .why-to-use-it {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       text-align: center;
-
+      margin-top: 25px;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
         p {
           font-size: 14px;
         }
@@ -161,21 +117,18 @@
 // mobile screens portrait
 @media (min-width: 321px) and (orientation: portrait) {
   .wrapper {
-    .earth {
-      top: -100px;
-    }
     .why-to-use-it {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top: 20px;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
         .why-to-use-it-title {
         }
       }
@@ -190,56 +143,20 @@
   }
 }
 
-@media (min-width: 370px) and (orientation: portrait) {
-  .wrapper {
-    .earth {
-      top: -80px;
-    }
-    .why-to-use-it {
-      .why-to-use-it-text {
-        margin-top: 80px;
-        margin-right: 10px;
-      }
-    }
-  }
-}
-
-// small tablet screens portrait
-@media (min-width: 600px) and (orientation: portrait) {
-  .wrapper {
-    .earth {
-      top: -120px !important;
-    }
-  }
-}
-
 // tablet screens portrait
-@media (min-width: 750px) and (orientation: portrait) {
-  .wrapper {
-    .earth {
-      top: -150px !important;
-    }
-  }
-}
-
 @media (min-width: 1000px) and (orientation: portrait) {
   .wrapper {
-    .earth {
-      top: -200px !important;
-    }
     .why-to-use-it {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 0px 50px 100px 50px;
+      margin: 100px 50px 100px 50px;
       .why-to-use-it-text {
         width: 60%;
-        margin-top: 150px;
       }
       .why-to-use-it-gif {
         width: 40%;
-        margin-top: 150px;
       }
     }
   }
@@ -253,15 +170,13 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 0px 50px 100px 50px;
+      margin: 50px 25px 50px 25px;
       .why-to-use-it-text {
         width: 60%;
-        margin-top: 200px;
       }
       .why-to-use-it-gif {
         width: 40%;
         text-align: center;
-        margin-top: 150px;
       }
     }
   }
@@ -269,25 +184,8 @@
 
 @media (min-width: 1601px) {
   .wrapper {
-    .earth {
-      display: none;
-    }
-    .travel-comparator {
-      position: absolute;
-      top: -200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
-      width: 100%;
-      background-color: #29b3c1;
-      h2 {
-        color: white;
-        font-size: 40px;
-      }
-    }
     .why-to-use-it {
-      margin-bottom: 200px;
+      margin: 150px 50px 150px 50px;
     }
   }
 }

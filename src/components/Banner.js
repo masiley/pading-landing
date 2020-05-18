@@ -1,6 +1,7 @@
 import React from 'react';
 import './_Banner.scss';
 import catsandplants from '../img/catsandplants.mp4';
+import mappoints from '../img/mappoints.png';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { withSwalInstance } from "sweetalert2-react";
 import swal from "sweetalert2";
@@ -68,6 +69,7 @@ export default class Banner extends React.Component {
         const url =
         "https://pading.us8.list-manage.com/subscribe/post?u=f662f9f87cc780ecd97294f34&amp;id=0ef42685e7";
         return (
+          <div className="hello">
             <div className="banner">
                 <div className="valueprop">  
                     <div className="valueprop-title">
@@ -99,6 +101,10 @@ export default class Banner extends React.Component {
                     </video>           
                 </div>
             </div>
+            <div className="earth">
+              <img className="earth-img" src={mappoints} alt="meeting of friends thanks to travel"/>
+            </div>
+          </div>
         )
     }
 }
