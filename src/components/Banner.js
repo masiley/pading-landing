@@ -9,12 +9,29 @@ import swal from "sweetalert2";
 const CustomForm = ({ status, message, onValidated }) => {
     let email;
   
-    const submit = () =>
-      email &&
-      email.value.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email.value,
-      });
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const submit = () => {
+      if (email && emailRegex.test(email.value)) {
+        onValidated({
+          email: email.value,
+        });
+      } else {
+        return (
+          <SweetAlert>
+            {swal.fire({
+              icon: 'error',
+              title: 'This email address is not valid. Can you check it?',
+              showConfirmButton: false,
+              allowEnterKey: 'true',
+              allowOutsideClick: 'true',
+              buttonsStyling: 'false',
+              timer: 1500
+            })}
+          </SweetAlert>
+        )
+      }
+    }
   
     return (
       <div>
@@ -76,7 +93,7 @@ export default class Banner extends React.Component {
                         <h1>Find the perfect place to meet</h1>
                     </div>
                     <div className="valueprop-details">
-                        <p>Select your dates and the city you would like to depart from. Explore all destinations at the lowest price for you and the people you plan to meet</p>
+                        <p>Select your dates and the cities you would like to depart from. Explore all destinations at the lowest price for you and the people you plan to meet</p>
                     </div>
 
                     
