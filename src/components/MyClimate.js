@@ -12,7 +12,7 @@ export default function Simple() {
                     <h4>Pading calculate the climate impact of each destination. You can compensate your Co2 emissions and we plant trees.</h4>
                 </div>
                 <div className="myclimate-img">
-                <i class="fas fa-globe-europe fa-10x"></i>
+                <i className="fas fa-globe-europe fa-10x"></i>
                 </div>
             </div>
         </div>

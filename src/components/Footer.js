@@ -9,12 +9,29 @@ import swal from "sweetalert2";
 const CustomForm = ({ status, message, onValidated }) => {
   let email;
 
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value,
-    });
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const submit = () => {
+    if (email && emailRegex.test(email.value)) {
+      onValidated({
+        email: email.value,
+      });
+    } else {
+      return (
+        <SweetAlert>
+          {swal.fire({
+            icon: 'error',
+            title: 'This email address is not valid. Can you check it?',
+            showConfirmButton: false,
+            allowEnterKey: 'true',
+            allowOutsideClick: 'true',
+            buttonsStyling: 'false',
+            timer: 1500
+          })}
+        </SweetAlert>
+      )
+    }
+  }
 
   return (
     <div>
@@ -114,7 +131,7 @@ export default class Footer extends React.Component {
               </div>
               <div className="footer-menu-contact">
                 <h4>Contact</h4>
-                <a href="mailto:contact@pading.eu" target="_blank">
+                <a href="mailto:contact@pading.eu" target="_blank" rel="noopener noreferrer">
                   <p>Contact us</p>
                 </a>
                 <div className="footer-social">

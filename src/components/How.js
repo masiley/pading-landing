@@ -41,7 +41,7 @@ export default function How() {
                     </div>
                 </div>
                 <div className="how-to-use-it-video">
-                    <video className="videoapp" loop autoplay="autoplay" height="600px">
+                    <video className="videoapp" loop autoPlay="autoplay" height="600px">
                         <source src={padingapp} />
                     </video>
                 </div>
