@@ -113,7 +113,7 @@ export default class Banner extends React.Component {
                 </div>
                 <div className="gif">
             
-                    <video className="banner-img" autoPlay="autoplay" loop>
+                    <video className="banner-img" autoPlay="autoplay" loop muted>
                         <source src={catsandplants} />
                     </video>           
                 </div>
