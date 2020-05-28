@@ -21,16 +21,13 @@
       }
       .valueprop-details {
         text-align: center;
-        p {
-          font-size: 16px;
-        }
+        width: 75%;
       }
     }
     .email-form-banner {
       position: relative;
       text-align: center;
       background: transparent;
-      max-width: 400px;
       input {
         font-family: "Roboto", sans-serif;
         height: 44px;
@@ -54,6 +51,7 @@
         position: absolute;
         right: 0px;
         height: 44px;
+        border: none;
       }
     }
     .gif {
@@ -106,7 +104,7 @@
 }
 
 // small mobile screens landscape
-@media (min-width: 550px) and (orientation: landscape) {
+@media (min-width: 250px) and (orientation: landscape) {
   .hello {
     .banner {
       .valueprop {
@@ -155,6 +153,7 @@
   .hello {
     .banner {
       .valueprop {
+        margin-top: 100px;
         .valueprop-title {
           margin: 5px 40px 5px 40px;
         }
@@ -197,14 +196,19 @@
           }
         }
       }
-      .email-form-banner {
-        display: none;
-      }
       .gif {
         margin-top: 50px;
         width: 50%;
         .banner-img {
           max-height: 420px;
+        }
+      }
+      .email-form-banner {
+        input {
+          width: 370px;
+          &:focus {
+            width: 400px;
+          }
         }
       }
     }
@@ -228,7 +232,7 @@
 }
 
 // small mobile screens portrait
-@media (min-width: 300px) and (orientation: portrait) {
+@media (min-width: 200px) and (orientation: portrait) {
   .hello {
     .banner {
       .valueprop {
@@ -302,17 +306,9 @@
             font-size: 16px;
           }
         }
-        .email-form-banner {
-          margin-top: 40px;
-          input {
-            width: 300px;
-            &:focus {
-              width: 340px;
-            }
-          }
-        }
       }
       .gif {
+        margin: 25px 0px 25px 0px;
         .banner-img {
           max-height: 350px;
         }
@@ -340,7 +336,12 @@
           }
         }
         .email-form-banner {
-          display: none;
+          input {
+            width: 400px;
+            &:focus {
+              width: 430px;
+            }
+          }
         }
       }
       .gif {

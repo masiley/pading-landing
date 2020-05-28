@@ -122,7 +122,7 @@ export default class NavBar extends React.Component {
             </a>
           </div>
 
-          <div className="email-form email-form-background">
+          {/*<div className="email-form email-form-background">
             <MailchimpSubscribe
               url={url}
               render={({ subscribe, status, message }) => (
@@ -133,7 +133,7 @@ export default class NavBar extends React.Component {
                 />
               )}
             />
-          </div>
+              </div>*/}
         </div>
       </div>
     );
