@@ -92,16 +92,14 @@
       align-items: center;
       a {
         background: transparent;
-        width: 25px;
+        width: 50px;
         color: white;
-        margin-right: 5px;
-        margin-left: 5px;
       }
       :hover {
         color: #29b3c1;
       }
       i {
-        font-size: 25px;
+        font-size: 40px;
       }
     }
   }
@@ -185,12 +183,28 @@
 }
 
 // extra-small screens
+@media (max-width: 340px) {
+  .wrapper {
+    .footer {
+      .footer-social {
+        a {
+          width: 35px;
+        }
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 900px) {
   .wrapper {
-    .footer-menu {
-      flex-direction: column;
-      .footer-menu-email {
-        margin-bottom: 50px;
+    .footer {
+      .footer-menu {
+        flex-direction: column;
+        .footer-menu-email {
+          margin-bottom: 50px;
+        }
       }
     }
   }
@@ -199,10 +213,12 @@
 // normal and big screens
 @media (min-width: 901px) {
   .wrapper {
-    .footer-menu {
-      padding-top: 50px;
-      .footer-menu-email {
-        margin-bottom: 50px;
+    .footer {
+      .footer-menu {
+        padding-top: 50px;
+        .footer-menu-email {
+          margin-bottom: 50px;
+        }
       }
     }
   }

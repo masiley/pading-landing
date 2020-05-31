@@ -16,6 +16,7 @@
     .valueprop {
       display: flex;
       flex-direction: column;
+      margin: 0px 20px 0px 20px;
       .valueprop-title {
         text-align: center;
       }
@@ -29,7 +30,7 @@
       background: transparent;
       input {
         font-family: "Roboto", sans-serif;
-        height: 44px;
+        height: 50px;
         min-width: 270px;
         border: none;
         font-weight: 400;
@@ -37,8 +38,8 @@
         color: #373737;
         border: solid #29b3c1;
         text-align: left;
-        border-radius: 20px;
-        font-size: 14px;
+        border-radius: 25px;
+        font-size: 16px;
         padding: 10px;
         &:focus {
           min-width: 300px;
@@ -49,7 +50,7 @@
       .btn-blue {
         position: absolute;
         right: 0px;
-        height: 44px;
+        height: 50px;
         border: none;
       }
     }
@@ -104,16 +105,14 @@
           h1 {
             color: #29b3c1;
           }
-        }
-        .valueprop-details {
-          width: 80%;
-          p {
-            font-size: 14px;
-            margin: 5px 25px 5px 25px;
+          .valueprop-details {
+            margin-top: 10px;
           }
         }
       }
       .email-form-banner {
+        margin-top: 20px;
+        margin-bottom: 20px;
         input {
           width: 320px;
           &:focus {
@@ -183,11 +182,7 @@
           }
         }
         .valueprop-details {
-          width: 70%;
-          margin: 0px 25px 10px 25px;
-          p {
-            font-size: 16px;
-          }
+          width: 90%;
         }
       }
       .gif {
@@ -203,6 +198,31 @@
           &:focus {
             width: 400px;
           }
+        }
+      }
+    }
+  }
+}
+
+// big screens
+@media (min-width: 1601px) {
+  .hello {
+    .banner {
+      .valueprop {
+        width: 50%;
+        margin: 250px 0px 250px 20px;
+        .valueprop-title {
+          padding: 20px 80px 20px 80px;
+        }
+        .valueprop-details {
+          width: 70%;
+        }
+      }
+      .gif {
+        width: 50%;
+        .banner-img {
+          max-height: 600px;
+          margin-left: 100px;
         }
       }
     }
@@ -226,23 +246,23 @@
 }
 
 // small mobile screens portrait
-@media (min-width: 280px) and (orientation: portrait) {
+@media (min-width: 300px) and (orientation: portrait) {
   .hello {
     .banner {
       .valueprop {
         .valueprop-title {
-          margin-top: 0px;
+          margin-top: 70px;
           h1 {
             color: #29b3c1;
           }
         }
         .valueprop-details {
+          margin-top: 10px;
           width: 90%;
-          p {
-            font-size: 14px;
-          }
         }
         .email-form-banner {
+          margin-top: 20px;
+          margin-bottom: 20px;
           input {
             width: 270px;
             &:focus {
@@ -252,9 +272,7 @@
         }
       }
       .gif {
-        .banner-img {
-          max-height: 150px;
-        }
+        display: none;
       }
     }
   }
@@ -265,11 +283,8 @@
   .hello {
     .banner {
       .valueprop {
-        .valueprop-details {
-          margin: 10px 20px 10px 20px;
-          p {
-            font-size: 14px;
-          }
+        .valueprop-title {
+          margin-top: -20px;
         }
         .email-form-banner {
           input {
@@ -281,6 +296,7 @@
         }
       }
       .gif {
+        display: block;
         margin-top: 10px;
         .banner-img {
           max-height: 300px;
@@ -290,59 +306,12 @@
   }
 }
 
-@media (min-width: 321px) and (max-height: 700px) and (orientation: portrait) {
-  .hello {
-    .banner {
-      .gif {
-        .banner-img {
-          max-height: 250px;
-        }
-      }
-    }
-  }
-}
-
-// small tablet screens portrait
-@media (min-width: 416px) and (orientation: portrait) {
-  .hello {
-    .banner {
-      .valueprop {
-        .valueprop-details {
-          width: 75%;
-          margin: 0px 50px 0px 50px;
-          p {
-            font-size: 16px;
-          }
-        }
-      }
-      .gif {
-        margin: 25px 0px 25px 0px;
-        .banner-img {
-          max-height: 350px;
-        }
-      }
-    }
-  }
-}
-
 // tablet screens portrait
-@media (min-width: 850px) and (orientation: portrait) {
+@media (min-width: 750px) and (orientation: portrait) {
   .hello {
     .banner {
       .valueprop {
         margin: 0px 100px 0px 100px;
-        .valueprop-title {
-          margin-top: 50px;
-          h1 {
-            font-size: 50px;
-          }
-        }
-        .valueprop-details {
-          margin: 0px 50px 0px 50px;
-          p {
-            font-size: 16px;
-          }
-        }
         .email-form-banner {
           input {
             width: 400px;
@@ -355,35 +324,28 @@
       .gif {
         margin-top: 50px;
         .banner-img {
-          max-height: 500px;
+          max-height: 450px;
         }
       }
     }
   }
 }
 
-// big screens
-@media (min-width: 1601px) {
+@media (min-width: 850px) and (orientation: portrait) {
   .hello {
     .banner {
       .valueprop {
+        margin-top: 100px;
         width: 50%;
-        margin: 250px 0px 250px 20px;
         .valueprop-title {
+          background-color: #29b3c1;
+          max-height: 250px;
+          border-radius: 50px;
+          padding: 20px 10px 20px 10px;
           margin: 0px 5px 10px 5px;
           h1 {
-            font-size: 40px;
+            color: white;
           }
-        }
-        .valueprop-details {
-          margin: 0px 100px 10px 100px;
-        }
-      }
-      .gif {
-        width: 50%;
-        .banner-img {
-          max-height: 600px;
-          margin-left: 100px;
         }
       }
     }

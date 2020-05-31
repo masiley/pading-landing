@@ -33,16 +33,15 @@
       margin-right: 10px;
       a {
         background: transparent;
-        width: 25px;
-        margin-left: 5px;
-        margin-right: 5px;
+        width: 50px;
+
         color: white;
       }
       :hover {
         color: #29b3c1;
       }
       i {
-        font-size: 25px;
+        font-size: 40px;
       }
     }
   }
@@ -136,6 +135,22 @@ button {
 }
 
 // extra-small screens
+@media (max-width: 340px) {
+  .navbar {
+    .navbar-menu {
+      .navbar-social {
+        a {
+          width: 35px;
+        }
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .email-form {
     display: none;
