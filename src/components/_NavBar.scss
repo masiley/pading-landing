@@ -135,7 +135,7 @@ button {
 }
 
 // extra-small screens
-@media (max-width: 340px) {
+@media only screen (max-width: 340px) {
   .navbar {
     .navbar-menu {
       .navbar-social {
@@ -151,7 +151,7 @@ button {
   }
 }
 
-@media (max-width: 900px) {
+@media only screen (max-width: 900px) {
   .email-form {
     display: none;
   }
