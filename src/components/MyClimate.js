@@ -10,7 +10,7 @@ export default function Simple() {
                     <h2>We love our planet</h2>
                     <br/>
                     <p>If like us, you face inner conflict between your passion for travelling and your concerns for ecology, we can do something.</p>
-                    <h4>Pading calculate the climate impact of each destination. You can compensate your Co2 emissions and we plant trees.</h4>
+                    <h3>Pading calculate the climate impact of each destination. You can compensate your Co2 emissions and we plant trees.</h3>
                 </div>
                 <div className="myclimate-img">
                 <i className="fas fa-globe-europe fa-10x"></i>

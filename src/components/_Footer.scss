@@ -10,7 +10,7 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      padding: 50px 10px 50px 10px;
+      padding: 5rem 1rem 5rem 1rem;
 
       h4 {
         color: white;
@@ -30,20 +30,22 @@
         align-items: center;
         .footer-menu-email-form {
           position: relative;
-          text-align: right;
-          background: #f49d11;
+          text-align: center;
+          background: transparent;
           input {
             font-family: "Roboto", sans-serif;
-            height: 50px;
+            height: 5rem;
+            min-width: 27rem;
             border: none;
             font-weight: 400;
             background: white;
             color: #373737;
             text-align: left;
-            border-radius: 5px;
-            font-size: 16px;
-            padding: 10px;
+            border-radius: 21rem;
+            font-size: 1.6rem;
+            padding: 1rem 7rem 1rem 1rem;
             &:focus {
+              min-width: 30rem;
               transition-duration: 0.5s;
               outline: 0;
             }
@@ -51,17 +53,12 @@
         }
         .btn-blue {
           position: absolute;
-          right: -40px;
-          font-family: "Roboto", sans-serif;
-          height: 46px;
-          margin-top: 2px;
-          margin-right: 25px;
-          border-radius: 50px;
-          border: 0;
+          right: 0rem;
+          height: 5rem;
+          border-radius: 5rem;
+          border: none;
           color: white;
           background-color: #29b3c1 !important;
-          font-size: 14px;
-          background: #fff;
           font-weight: 700;
           &:hover {
             background-color: #53c2cd !important;
@@ -76,13 +73,13 @@
         align-items: flex-start;
         justify-content: center;
         .footer-menu-app {
-          margin-left: 20px;
+          margin-left: 2rem;
           text-align: center;
         }
         .footer-menu-contact {
-          margin-left: 20px;
+          margin-left: 2rem;
           text-align: center;
-          margin-left: 100px;
+          margin-left: 10rem;
         }
       }
     }
@@ -92,14 +89,14 @@
       align-items: center;
       a {
         background: transparent;
-        width: 50px;
+        width: 5rem;
         color: white;
       }
       :hover {
         color: #29b3c1;
       }
       i {
-        font-size: 40px;
+        font-size: 4rem;
       }
     }
   }
@@ -115,16 +112,16 @@
   justify-content: center;
   a {
     background: transparent;
-    width: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     color: #29b3c1;
   }
   :hover {
     color: #53c2cd;
   }
   i {
-    font-size: 40px;
+    font-size: 4rem;
   }
 }
 
@@ -135,45 +132,9 @@
       .footer-menu-email {
         .footer-menu-email-form {
           input {
-            width: 300px;
+            width: 32rem;
             &:focus {
-              width: 330px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// small mobile screens portrait
-@media (min-width: 300px) and (orientation: portrait) {
-  .footer {
-    .footer-menu {
-      .footer-menu-email {
-        .footer-menu-email-form {
-          input {
-            width: 250px;
-            &:focus {
-              width: 280px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// small mobile screens portrait
-@media (min-width: 321px) and (orientation: portrait) {
-  .footer {
-    .footer-menu {
-      .footer-menu-email {
-        .footer-menu-email-form {
-          input {
-            width: 300px;
-            &:focus {
-              width: 330px;
+              width: 35rem;
             }
           }
         }
@@ -188,10 +149,10 @@
     .footer {
       .footer-social {
         a {
-          width: 35px;
+          width: 3.5rem;
         }
         i {
-          font-size: 30px;
+          font-size: 3rem;
         }
       }
     }
@@ -203,7 +164,7 @@
       .footer-menu {
         flex-direction: column;
         .footer-menu-email {
-          margin-bottom: 50px;
+          margin-bottom: 5rem;
         }
       }
     }
@@ -215,9 +176,9 @@
   .wrapper {
     .footer {
       .footer-menu {
-        padding-top: 50px;
+        padding-top: 5rem;
         .footer-menu-email {
-          margin-bottom: 50px;
+          margin-bottom: 5rem;
         }
       }
     }

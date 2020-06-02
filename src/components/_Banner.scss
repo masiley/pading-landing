@@ -3,8 +3,8 @@
   flex-direction: column;
   flex-direction: justify-content;
   align-items: align-items;
-  min-height: calc(100vh - 70px);
-  margin-top: 70px;
+  min-height: calc(100vh - 7rem);
+  margin-top: 7rem;
   .earth {
     img {
       width: 100%;
@@ -16,7 +16,6 @@
     .valueprop {
       display: flex;
       flex-direction: column;
-      margin: 0px 20px 0px 20px;
       .valueprop-title {
         text-align: center;
       }
@@ -30,27 +29,26 @@
       background: transparent;
       input {
         font-family: "Roboto", sans-serif;
-        height: 50px;
-        min-width: 270px;
-        border: none;
+        height: 5rem;
+        min-width: 27rem;
         font-weight: 400;
         background: white;
         color: #373737;
         border: solid #29b3c1;
         text-align: left;
-        border-radius: 25px;
-        font-size: 16px;
-        padding: 10px;
+        border-radius: 2.5rem;
+        font-size: 1.6rem;
+        padding: 1rem 10rem 1rem 1rem;
         &:focus {
-          min-width: 300px;
+          min-width: 30rem;
           transition-duration: 0.5s;
           outline: 0;
         }
       }
       .btn-blue {
         position: absolute;
-        right: 0px;
-        height: 50px;
+        right: 0rem;
+        height: 5rem;
         border: none;
       }
     }
@@ -66,16 +64,16 @@
     justify-content: center;
     a {
       background: transparent;
-      width: 40px;
-      margin-left: 5px;
-      margin-right: 5px;
+      width: 4rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
       color: #29b3c1;
     }
     :hover {
       color: #53c2cd;
     }
     i {
-      font-size: 40px;
+      font-size: 4rem;
     }
   }
 }
@@ -106,17 +104,17 @@
             color: #29b3c1;
           }
           .valueprop-details {
-            margin-top: 10px;
+            margin-top: 1rem;
           }
         }
       }
       .email-form-banner {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         input {
-          width: 320px;
+          width: 32rem;
           &:focus {
-            width: 350px;
+            width: 35rem;
           }
         }
       }
@@ -133,7 +131,7 @@
     .banner {
       .valueprop {
         .valueprop-details {
-          margin: 5px 75px 5px 75px;
+          margin: 0.5rem 7.5rem 0.5rem 7.5rem;
         }
       }
     }
@@ -145,19 +143,19 @@
   .hello {
     .banner {
       .valueprop {
-        margin-top: 100px;
+        margin-top: 10rem;
         .valueprop-title {
-          margin: 5px 40px 5px 40px;
+          margin: 0.5rem 4rem 0.5rem 4rem;
         }
         .valueprop-details {
-          margin: 5px 40px 5px 40px;
+          margin: 0.5rem 4rem 0.5rem 4rem;
         }
       }
       .gif {
         display: block;
-        margin-top: 50px;
+        margin-top: 5rem;
         .banner-img {
-          max-height: 350px;
+          max-height: 35rem;
         }
       }
     }
@@ -169,14 +167,14 @@
   .hello {
     .banner {
       .valueprop {
-        margin-top: 100px;
+        margin-top: 10rem;
         width: 50%;
         .valueprop-title {
           background-color: #29b3c1;
-          max-height: 250px;
-          border-radius: 50px;
-          padding: 20px 10px 20px 10px;
-          margin: 0px 5px 10px 5px;
+          max-height: 25rem;
+          border-radius: 5rem;
+          padding: 2rem 1rem 2rem 1rem;
+          margin: 0 0.5rem 1rem 0.5rem;
           h1 {
             color: white;
           }
@@ -186,17 +184,17 @@
         }
       }
       .gif {
-        margin-top: 50px;
+        margin-top: 5rem;
         width: 50%;
         .banner-img {
-          max-height: 420px;
+          max-height: 42rem;
         }
       }
       .email-form-banner {
         input {
-          width: 370px;
+          width: 37rem;
           &:focus {
-            width: 400px;
+            width: 40rem;
           }
         }
       }
@@ -210,9 +208,9 @@
     .banner {
       .valueprop {
         width: 50%;
-        margin: 250px 0px 250px 20px;
+        margin: 25rem 0 25rem 2rem;
         .valueprop-title {
-          padding: 20px 80px 20px 80px;
+          padding: 2rem 8rem 2rem 8rem;
         }
         .valueprop-details {
           width: 70%;
@@ -221,8 +219,8 @@
       .gif {
         width: 50%;
         .banner-img {
-          max-height: 600px;
-          margin-left: 100px;
+          max-height: 60rem;
+          margin-left: 10rem;
         }
       }
     }
@@ -251,22 +249,22 @@
     .banner {
       .valueprop {
         .valueprop-title {
-          margin-top: 70px;
+          margin-top: 7rem;
           h1 {
             color: #29b3c1;
           }
         }
         .valueprop-details {
-          margin-top: 10px;
+          margin-top: 1rem;
           width: 90%;
         }
         .email-form-banner {
-          margin-top: 20px;
-          margin-bottom: 20px;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
           input {
-            width: 270px;
+            width: 27rem;
             &:focus {
-              width: 300px;
+              width: 30rem;
             }
           }
         }
@@ -284,22 +282,22 @@
     .banner {
       .valueprop {
         .valueprop-title {
-          margin-top: -20px;
+          margin-top: -2rem;
         }
         .email-form-banner {
           input {
-            width: 320px;
+            width: 32rem;
             &:focus {
-              width: 350px;
+              width: 35rem;
             }
           }
         }
       }
       .gif {
         display: block;
-        margin-top: 10px;
+        margin-top: 1rem;
         .banner-img {
-          max-height: 300px;
+          max-height: 30rem;
         }
       }
     }
@@ -311,20 +309,20 @@
   .hello {
     .banner {
       .valueprop {
-        margin: 0px 100px 0px 100px;
+        margin: 0 10rem 0 10rem;
         .email-form-banner {
           input {
-            width: 400px;
+            width: 40rem;
             &:focus {
-              width: 430px;
+              width: 43rem;
             }
           }
         }
       }
       .gif {
-        margin-top: 50px;
+        margin-top: 5rem;
         .banner-img {
-          max-height: 450px;
+          max-height: 45rem;
         }
       }
     }
@@ -335,14 +333,14 @@
   .hello {
     .banner {
       .valueprop {
-        margin-top: 100px;
+        margin-top: 10rem;
         width: 50%;
         .valueprop-title {
           background-color: #29b3c1;
-          max-height: 250px;
-          border-radius: 50px;
-          padding: 20px 10px 20px 10px;
-          margin: 0px 5px 10px 5px;
+          max-height: 25rem;
+          border-radius: 5rem;
+          padding: 2rem 1rem 2rem 1rem;
+          margin: 0 0.5rem 1rem 0.5rem;
           h1 {
             color: white;
           }
