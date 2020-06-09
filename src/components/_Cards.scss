@@ -60,7 +60,7 @@
             font-size: 1.6rem;
           }
           p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -75,6 +75,21 @@
 @media (min-width: 992px) {
   .wrapper {
     .cards-trip {
+      .card-trip-infos {
+        .card-trip-city {
+          h4 {
+            font-size: 1.6rem;
+          }
+        }
+        .card-trip-pricing {
+          h4 {
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
       .cards-trip-content {
         height: 26rem;
         margin-top: 0px;

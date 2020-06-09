@@ -29,7 +29,7 @@
       background: transparent;
       input {
         font-family: "Roboto", sans-serif;
-        height: 5rem;
+        height: 5.5rem;
         min-width: 27rem;
         font-weight: 400;
         background: white;
@@ -37,7 +37,7 @@
         border: solid #29b3c1;
         text-align: left;
         border-radius: 2.5rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         padding: 1rem 10rem 1rem 1rem;
         &:focus {
           min-width: 30rem;
@@ -48,7 +48,7 @@
       .btn-blue {
         position: absolute;
         right: 0rem;
-        height: 5rem;
+        height: 5.5rem;
         border: none;
       }
     }

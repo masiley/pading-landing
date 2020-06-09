@@ -178,7 +178,7 @@ export default function Faq() {
           id="panel7a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>How do you make money?</h4>
+            <h4>Do you make money with this service?</h4>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -227,7 +227,7 @@ export default function Faq() {
           id="panel9a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What is your vision with Pading?</h4>
+            <h4>What is your vision for the development Pading?</h4>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>

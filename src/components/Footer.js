@@ -14,7 +14,7 @@ const CustomForm = ({ status, message, onValidated }) => {
   const submit = () => {
     if (email && emailRegex.test(email.value)) {
       onValidated({
-        email: email.value,
+        EMAIL: email.value,
       });
     } else {
       return (

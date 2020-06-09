@@ -14,7 +14,7 @@ const CustomForm = ({ status, message, onValidated }) => {
     const submit = () => {
       if (email && emailRegex.test(email.value)) {
         onValidated({
-          email: email.value,
+          EMAIL: email.value,
         });
       } else {
         return (
@@ -57,7 +57,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             allowEnterKey: 'true',
             allowOutsideClick: 'true',
             buttonsStyling: 'false',
-            html: '<br/><p>You can also follow us on social media :)</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+            html: '<br/><p>You can also follow us on social media</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -113,7 +113,7 @@ export default class Banner extends React.Component {
                 </div>
                 <div className="gif">
             
-                    <video className="banner-img" autoPlay="autoplay" loop muted>
+                    <video className="banner-img" autoPlay="autoplay" loop muted playsInLine>
                         <source src={catsandplants} />
                     </video>           
                 </div>
