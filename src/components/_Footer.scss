@@ -86,7 +86,7 @@
     }
     .footer-social {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       a {
         background: transparent;
@@ -154,32 +154,6 @@
         }
         i {
           font-size: 3rem;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 900px) {
-  .wrapper {
-    .footer {
-      .footer-menu {
-        flex-direction: column;
-        .footer-menu-email {
-          margin-bottom: 5rem;
-        }
-      }
-    }
-  }
-}
-
-// normal and big screens
-@media (min-width: 901px) {
-  .wrapper {
-    .footer {
-      .footer-menu {
-        padding-top: 5rem;
-        .footer-menu-email {
-          margin-bottom: 5rem;
         }
       }
     }

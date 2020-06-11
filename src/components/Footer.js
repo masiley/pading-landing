@@ -153,6 +153,24 @@ export default class Footer extends React.Component {
               </div>
             </div>
           </div>
+          <div>
+            <a
+              href="https://tree-nation.com/profile/impact/pading-1#co2"
+              target="_blank"
+              style={{
+                "padding-bottom": "2rem",
+                position: "relative",
+                cursor: "pointer",
+                display: "block",
+                zIndex: 999
+              }}
+            >
+              <img
+                src="https://tree-nation.com/images/tracking/label-co2-website-white-en.png"
+                style={{ width: 150, height: "auto" }}
+              />
+            </a>
+          </div>   
         </div>
       </div>
     );
