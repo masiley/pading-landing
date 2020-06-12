@@ -11,7 +11,6 @@
       align-items: center;
       width: 100%;
       padding: 5rem 1rem 5rem 1rem;
-
       h4 {
         color: white;
       }
@@ -154,6 +153,20 @@
         }
         i {
           font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+// small screens
+@media (max-width: 550px) {
+  .wrapper {
+    .footer {
+      .footer-menu {
+        flex-direction: column;
+        .footer-menu-email {
+          margin-bottom: 5rem;
         }
       }
     }
