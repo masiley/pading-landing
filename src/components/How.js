@@ -18,7 +18,7 @@ export default function How() {
                         </div>
                         <div className="how-to-use-it-details">
                             <h3>Select your travel dates</h3>
-                            <p>Fill your travel dates, one-way/return</p>
+                            <p>Fill in your travel dates, one-way/return</p>
                         </div>
                     </div>
                     <div className="how-to-use-it-content-card">
@@ -26,8 +26,8 @@ export default function How() {
                             <h2>2</h2>
                         </div>
                         <div className="how-to-use-it-details">
-                            <h3>Tell us where your journey begin</h3>
-                            <p>Enter all departure cities you and your friends/family come from</p>
+                            <h3>Tell us where your journey begins</h3>
+                            <p>Enter all departure cities you and your friends/family are coming from</p>
                         </div>
                     </div>
                     <div className="how-to-use-it-content-card">

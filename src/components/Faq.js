@@ -60,7 +60,7 @@ export default function Faq() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>Pading is the only travel comparator that allow you to find common destinations according to multi departure cities and some dates.</b>
+            <p><b>Pading is the only travel comparator that allows you to find common destinations according to multi departure cities and various dates.</b>
               <br/>
               <br/>
               Andy and Juli are leaving from München and Frankfürt.
@@ -72,7 +72,7 @@ export default function Faq() {
               Violaine, Ludi, Louis and Dimitri are leaving from Paris.
               <br/>
               <br/>
-              Our algorithm search for all the existing travel combinations to meet in a same place. <b>The cheapest destinations for the all team are highlighted</b>.
+              Our algorithm searches for all the existing travel combinations to meet in a same place. <b>The cheapest destinations for the whole team are highlighted</b>.
               </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -115,14 +115,14 @@ export default function Faq() {
               <br/>
               - Looking at all the travel possibilities and all the prices for each people
               <br/>
-              - Proposing an other destination if this one does not match everyone's criteria
+              - Proposing another destination if this one does not match everyone's criteria
               <br/>
               - Do the same X times until it is good
               <br/>
               <br/>
               <b>With Pading, it looks like this:
               <br/>
-              - Fill the dates and enter all the departure cities you and your friends/family come from
+              - Fill in the dates and enter all the departure cities you and your friends/family come from
               <br/>
               - Select your common destination among the cheapest ones
               <br/>
@@ -166,7 +166,7 @@ export default function Faq() {
               <br />
               <b>We want to empower each traveler to offset his co2 emissions</b>. For this reason we calculate the climate impact of each destination.
               <br />
-              From our side, <b>we plant trees</b> to get a neutral Co2 Website <b>and develop as well as possible train journey</b>.
+              From our side, <b>we plant trees</b> to get a neutral Co2 website <b>and develop as well as possible train journey</b>.
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -183,7 +183,7 @@ export default function Faq() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>Pading is a user interface. The booking is made on Kiwi secure Website that offers very good guarantee protecting customers from schedule change, delays and cancellations.
+            <p>Pading is a user interface. The booking is made on Kiwi secure website that offers very good guarantee protecting customers from schedule change, delays and cancellations.
             <br/>
             <br/>
             <b>We work as an affiliate with Kiwi booking platform that gives us a 3% commission of each booking amount.</b>
@@ -211,11 +211,11 @@ export default function Faq() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>Kiwi is a big, wellknown and secure booking platform in the travel industry</b>. We work with them to benefit from its data combining 520 billion different route combinations with flights, trains and buses.
+            <p><b>Kiwi is a big, well known and secure booking platform in the travel industry</b>. We work with them to benefit from its data combining 520 billion different route combinations with flights, trains and buses.
               <br/>
               <br/>
               Pading is a user interface. We integrate data from Kiwi to search for common destinations according to dates and multiple departure cities.
-              <b>The booking is made on Kiwi secure Website that offers a 24/7 customer support and great guarantee</b> in case of schedule change, delays and cancellations.
+              <b>The booking is made on Kiwi secure website that offers a 24/7 customer support and great guarantee</b> in case of schedule change, delays and cancellations.
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -227,14 +227,14 @@ export default function Faq() {
           id="panel9a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What is your vision for the development Pading?</h4>
+            <h4>What is your vision for the development of Pading?</h4>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>We want to make easier long-distance friendships and family meetings.
+            <p><b>We want to make long-distance friendships and family meetings easier.
               <br/>
-              We wait for your feedbacks and recommendations to develop Pading in the right direction.</b>
+              We are waiting for your feedback and recommendations to develop Pading in the right direction.</b>
               <br/>
               <br/>
               This is what we imagine for later:
