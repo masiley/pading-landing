@@ -1,26 +1,36 @@
 .wrapper {
   .cards-trip {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    background-color: white;
     .card-trip {
+      position: relative;
       overflow: hidden;
       background: white;
       box-shadow: 0 0.5rem 1rem 0 rgba(245, 245, 245, 0.1);
-      margin-bottom: 5rem;
       border-radius: 0.5rem;
       -webkit-transition: all 0.3s ease 0s;
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
+      margin-bottom: 2rem;
     }
     .card-trip:hover {
       transform: scale3d(1.006, 1.006, 1);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
     img {
-      height: 20rem;
+      height: 14rem;
       width: 100%;
       object-fit: cover;
+    }
+    .carbon-footprint {
+      position: absolute;
+      bottom: -1.2rem;
+      right: 0.5rem;
+      p {
+        font-size: 1.2rem;
+        color: #262626;
+        font-weight: bold;
+      }
     }
     .card-trip-infos {
       padding: 0.5rem;
@@ -75,18 +85,22 @@
 @media (min-width: 992px) {
   .wrapper {
     .cards-trip {
-      .card-trip-infos {
-        .card-trip-city {
-          h4 {
-            font-size: 1.6rem;
+      margin-top: 5rem;
+      .card-trip {
+        margin-bottom: 5rem;
+        .card-trip-infos {
+          .card-trip-city {
+            h4 {
+              font-size: 1.6rem;
+            }
           }
-        }
-        .card-trip-pricing {
-          h4 {
-            font-size: 1.6rem;
-          }
-          p {
-            font-size: 1.4rem;
+          .card-trip-pricing {
+            h4 {
+              font-size: 1.6rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
           }
         }
       }

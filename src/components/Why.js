@@ -6,18 +6,15 @@ import './_Why.scss';
 export default function Why() {
     return (
         <div className="wrapper">
-            <div className="travel-comparator">
-                <h2>The travel comparator for long-distance friendships and family! </h2>
-            </div>
             <div className="why-to-use-it">
                 <div className="why-to-use-it-gif">
                     <video className="why-to-use-it-video" autoPlay="autoplay" loop muted playsInLine>
                         <source src={happycats} />
                     </video>
                 </div>
-                <div className="why-to-use-it-text">
+                <div className="why-to-use-it-text" id="why">
                     <div className="why-to-use-it-title">
-                        <h2>Why to use pading?</h2>
+                        <h2>Why use pading?</h2>
                     </div>
                     <div className="why-to-use-it-content">
                         <div className="why-to-use-it-content-card">           

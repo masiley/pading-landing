@@ -24,7 +24,6 @@
           .why-to-use-it-details {
             text-align: left;
             width: 70%;
-            margin-top: 1rem;
           }
         }
       }
@@ -53,7 +52,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-top: 5rem;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
@@ -94,7 +92,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-top: 2.5rem;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
@@ -121,7 +118,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-top: 2rem;
       .why-to-use-it-text {
         display: flex;
         flex-direction: column;
@@ -134,7 +130,7 @@
         width: 100%;
         text-align: center;
         .why-to-use-it-video {
-          max-width: 30rem;
+          max-width: 33rem;
         }
       }
     }
@@ -168,7 +164,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 5rem 2.5rem 5rem 2.5rem;
+      margin: 0 2.5rem 5rem 2.5rem;
       .why-to-use-it-text {
         width: 60%;
       }
@@ -183,7 +179,7 @@
 @media (min-width: 1601px) {
   .wrapper {
     .why-to-use-it {
-      margin: 15rem 5rem 15rem 5rem;
+      margin: 0 5rem 15rem 5rem;
     }
   }
 }

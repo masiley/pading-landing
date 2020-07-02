@@ -10,9 +10,13 @@ import Footer from "./Footer";
 import "./_App.scss";
 
 export default class App extends React.Component {
-  scrollUp() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  
+
+  scrollToTop() {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
   }
 
   render() {
@@ -20,12 +24,12 @@ export default class App extends React.Component {
       <div>
         <NavBar />
         <Banner />
+        <Cards />
         <Why />
         <How />
         <Simple />
-        <Cards />
         <MyClimate />
-        <Footer scrollUp={this.scrollUp} />
+        <Footer scrollToTop={this.scrollToTop} />
       </div>
     );
   }

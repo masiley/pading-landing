@@ -1,0 +1,51 @@
+.marker-departure-city {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  img {
+    position: absolute;
+    top: -6.8rem;
+    left: -3.5rem;
+    width: 7rem;
+  }
+}
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.fa-bookmark {
+  color: #29b3c1;
+}
+
+.marker-destination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.4rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.4rem !important;
+  background-color: #3e936f;
+  &:hover {
+    background-color: #3e936f !important;
+  }
+  &:focus {
+    outline: none;
+  }
+  p {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  .marker-destination-arrow {
+    position: absolute;
+    bottom: -0.5rem;
+    right: 1.5rem;
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    border-top: 0.7rem solid #3e936f;
+  }
+}
