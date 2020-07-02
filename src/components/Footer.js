@@ -73,7 +73,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending"}
       >
-        Try this app
+        Try Pading
       </button>
     </div>
   );
@@ -94,11 +94,8 @@ export default class Footer extends React.Component {
         <div className="footer">
           <div className="footer-menu">
             <div className="footer-menu-email">
-              <h4>Trying Pading</h4>
-              <p>
-                Explore the next destination you would like to meet with your friends and
-                family
-              </p>
+              <h4>Explore the next destination to meet with your friends and
+                family</h4>
               <div className="footer-menu-email-form">
               <MailchimpSubscribe
               url={url}
@@ -115,7 +112,7 @@ export default class Footer extends React.Component {
             <div className="footer-menu-app-contact">
               <div className="footer-menu-app">
                 <h4>Pading</h4>
-                <a href="/" onClick={this.props.scrollUp}>
+                <a className="btn-product" onClick={this.props.scrollToTop}>
                   <p>Product</p>
                 </a>
                 <Popup
@@ -152,8 +149,8 @@ export default class Footer extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-          <div>
+          </div> 
+            <div className="tree-nations">
             <a
               href="https://tree-nation.com/profile/impact/pading-1#co2"
               target="_blank"
@@ -170,7 +167,7 @@ export default class Footer extends React.Component {
                 style={{ width: 150, height: "auto" }}
               />
             </a>
-          </div>   
+          </div>  
         </div>
       </div>
     );

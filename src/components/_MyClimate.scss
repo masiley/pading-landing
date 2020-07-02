@@ -43,12 +43,13 @@
 @media (min-width: 1201px) {
   .wrapper {
     .myclimate {
-      padding: 12.5rem 20rem 12.5rem 20rem;
+      padding: 10rem 20rem 10rem 20rem;
       .myclimate-img {
         width: 40%;
       }
       .myclimate-content {
         width: 60%;
+        padding: 0 10rem 0 10rem;
       }
     }
   }

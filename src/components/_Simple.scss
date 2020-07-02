@@ -31,7 +31,7 @@
 @media (min-width: 901px) {
   .wrapper {
     .simple-solution {
-      padding: 5rem 5rem 5rem 5rem;
+      padding: 3rem 5rem 3rem 5rem;
       .simple-solution-gif {
         width: 50%;
       }
@@ -46,13 +46,14 @@
 @media (min-width: 1201px) {
   .wrapper {
     .simple-solution {
-      padding: 5rem 10rem 5rem 10rem;
+      padding: 8rem 10rem 3rem 10rem;
       .simple-solution-gif {
         text-align: center;
         width: 40%;
       }
       .simple-solution-content {
         width: 60%;
+        padding: 0 10rem 0 10rem;
       }
     }
   }
