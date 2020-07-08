@@ -143,6 +143,7 @@ export default class Banner extends React.Component {
             />
           </div>
         </div>
+     
         <div className="map">
           <Map
             budapest={this.scrollToBudapest}
