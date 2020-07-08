@@ -24,10 +24,10 @@
   justify-content: center;
   align-items: center;
   width: 4.4rem;
-  height: 2.5rem;
+  height: 2.4rem;
   border: none;
-  border-radius: 0.4rem !important;
   background-color: #3e936f;
+  pointer-events: fill;
   &:hover {
     background-color: #3e936f !important;
   }

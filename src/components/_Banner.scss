@@ -50,7 +50,7 @@
         border: none;
         font-weight: 700;
         &:hover {
-          background-color: #53c2cd !important;
+          background-color: #53c2cd;
         }
         &:focus {
           outline: none;
@@ -84,6 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
   }
 }
 
