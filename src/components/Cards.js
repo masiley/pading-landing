@@ -14,7 +14,7 @@ export default function Cards() {
                   alt="booking tickets and traveling to budapest"
                 />
                 <div className="carbon-footprint">
-                  <p>C02 amount: 1.825 t</p>
+                  <p><i class="fas fa-cloud"></i> 1.825 t</p>
                 </div>
                 <div className="card-trip-infos">
                   <div className="card-trip-city">
@@ -34,7 +34,7 @@ export default function Cards() {
                   alt="booking tickets and traveling to napoli"
                 />
                 <div className="carbon-footprint">
-                  <p>C02 amount: 2.003 t</p>
+                  <p><i class="fas fa-cloud"></i> 2.003 t CO2</p>
                 </div>
                 <div className="card-trip-infos">
                   <div className="card-trip-city">
@@ -54,7 +54,7 @@ export default function Cards() {
                   alt="booking tickets and traveling to bilbao"
                 />
                 <div className="carbon-footprint">
-                  <p>C02 amount: 1.399 t</p>
+                  <p><i class="fas fa-cloud"></i> 1.399 t</p>
                 </div>
                 <div className="card-trip-infos">
                   <div className="card-trip-city">
@@ -74,7 +74,7 @@ export default function Cards() {
                   alt="booking tickets and traveling to cordoba"
                 />
                 <div className="carbon-footprint">
-                  <p>C02 amount: 1.688 t</p>
+                  <p><i class="fas fa-cloud"></i> 1.688 t</p>
                 </div>
                 <div className="card-trip-infos">
                   <div className="card-trip-city">
