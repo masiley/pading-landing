@@ -76,9 +76,6 @@
     :hover {
       color: #53c2cd;
     }
-    i {
-      font-size: 4rem;
-    }
   }
   .map {
     display: flex;
@@ -175,7 +172,7 @@
   }
   .map {
     max-width: 100vw;
-    max-height: 20%;
-    margin-bottom: 10rem;
+    max-height: 40%;
+    margin-bottom: 5rem;
   }
 }

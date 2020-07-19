@@ -103,12 +103,6 @@ export default class Banner extends React.Component {
     const element = document.getElementById("cordoba");
     element.scrollIntoView(false)
   }
-
-  scrollToWhy() {
-    const element = document.getElementById("why");
-    element.scrollIntoView(false)
-    document.getElementById("arrow-banner").style.display="none"
-  }
   
   render() {
 
@@ -152,7 +146,6 @@ export default class Banner extends React.Component {
             cordoba={this.scrollToCordoba}
           />
         </div>
-        <i class="fas fa-chevron-down fa-1x" id="arrow-banner" onClick={this.scrollToWhy}></i>
       </div>
     );
   }
