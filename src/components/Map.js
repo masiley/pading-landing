@@ -21,13 +21,12 @@ export default class Map extends React.Component {
       interactive: false,
       attributionControl: false,
     },
-  };    
+  };
 
   render() {
-
     return (
       <ReactMapGL
-      {...this.state.viewport}
+        {...this.state.viewport}
         mapboxApiAccessToken="pk.eyJ1IjoibG91aXMxNDA0IiwiYSI6ImNrNm0zOGFkMDBqdG8zZXA3NGR5ejhzYnQifQ.Yt9WzWg8hdm6b9h5k5sxHw"
         mapStyle="mapbox://styles/louis1404/ckbfbhg8x21z51ik4rb1ylkrn"
         onViewportChange={(viewport) => this.setState({ viewport })}
@@ -47,39 +46,33 @@ export default class Map extends React.Component {
             <img src={yellowMarker} alt="Departure city" />
           </div>
         </Marker>
-        <Marker latitude={52.3701} longitude={4.8951}>
-
-        <button className="marker-destination" onClick={this.props.amsterdam}>
-            <div className="marker-destination-arrow">
-            </div>
+        <Marker latitude={54.7} longitude={1.8}>
+          <button className="marker-destination" onClick={this.props.amsterdam}>
+            <div className="marker-destination-arrow"></div>
             <p>125€</p>
-        </button>
+          </button>
         </Marker>
 
-        <Marker latitude={47.49801} longitude={19.03991}>
+        <Marker latitude={50} longitude={15.5}>
           <button className="marker-destination" onClick={this.props.budapest}>
-            <div className="marker-destination-arrow">
-            </div>
+            <div className="marker-destination-arrow"></div>
             <p>78€</p>
           </button>
         </Marker>
 
-        <Marker latitude={40.5122} longitude={14.1447}>
+        <Marker latitude={43.5} longitude={12}>
           <button className="marker-destination" onClick={this.props.naples}>
-            <div className="marker-destination-arrow">
-            </div>
+            <div className="marker-destination-arrow"></div>
             <p>97€</p>
           </button>
         </Marker>
 
-        <Marker latitude={37.8833} longitude={-4.7667}>
+        <Marker latitude={40.5} longitude={-7}>
           <button className="marker-destination" onClick={this.props.cordoba}>
-            <div className="marker-destination-arrow">
-            </div>
+            <div className="marker-destination-arrow"></div>
             <p>154€</p>
           </button>
         </Marker>
-        
       </ReactMapGL>
     );
   }

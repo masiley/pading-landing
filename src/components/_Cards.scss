@@ -2,7 +2,6 @@
   .cards-trip {
     background-color: white;
     .card-trip {
-      position: relative;
       overflow: hidden;
       background: white;
       box-shadow: 0 0.5rem 1rem 0 rgba(245, 245, 245, 0.1);
@@ -22,26 +21,28 @@
       width: 100%;
       object-fit: cover;
     }
-    .carbon-footprint {
-      position: absolute;
-      bottom: -1.2rem;
-      right: 0.5rem;
-      p {
-        font-size: 1.2rem;
-        color: #262626;
-        font-weight: bold;
-      }
-    }
     .card-trip-infos {
-      padding: 0.5rem;
+      padding: 0 0.5rem 0 0.5rem;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
-    }
-    .card-trip-pricing {
-      text-align: right;
-      color: #3e936f;
-      line-height: 0.5rem;
+      align-items: flex-end;
+      .card-trip-city-pricing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .card-trip-pricing {
+        color: #3e936f;
+      }
+      .carbon-footprint {
+        p {
+          font-size: 1.2rem;
+          color: #262626;
+          font-weight: bold;
+        }
+      }
     }
     .cards-trip-content {
       display: flex;

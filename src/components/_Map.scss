@@ -23,8 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.4rem;
-  height: 2.4rem;
+  width: 4.5rem;
+  height: 2.7rem;
   border: none;
   background-color: #3e936f;
   pointer-events: fill;
@@ -36,13 +36,13 @@
   }
   p {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     text-align: center;
-    margin-top: 0.7rem;
+    margin: 1rem;
   }
   .marker-destination-arrow {
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -0.3rem;
     right: 1.5rem;
     border-left: 0.7rem solid transparent;
     border-right: 0.7rem solid transparent;
