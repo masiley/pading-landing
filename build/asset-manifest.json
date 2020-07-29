@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e66c31e5.chunk.css",
+    "main.js": "/static/js/main.6de2f2a2.chunk.js",
+    "main.js.map": "/static/js/main.6de2f2a2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0bde822.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0bde822.js.map",
+    "static/js/2.08f7635d.chunk.js": "/static/js/2.08f7635d.chunk.js",
+    "static/js/2.08f7635d.chunk.js.map": "/static/js/2.08f7635d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3ec5d07c1d3da5a3a84316cc49b27aaa.js": "/precache-manifest.3ec5d07c1d3da5a3a84316cc49b27aaa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e66c31e5.chunk.css.map": "/static/css/main.e66c31e5.chunk.css.map",
+    "static/js/2.08f7635d.chunk.js.LICENSE.txt": "/static/js/2.08f7635d.chunk.js.LICENSE.txt",
+    "static/media/catsbasket.mp4": "/static/media/catsbasket.2672a86e.mp4",
+    "static/media/happycats.mp4": "/static/media/happycats.11466786.mp4",
+    "static/media/padingapp.mp4": "/static/media/padingapp.d265acaa.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0bde822.js",
+    "static/js/2.08f7635d.chunk.js",
+    "static/css/main.e66c31e5.chunk.css",
+    "static/js/main.6de2f2a2.chunk.js"
+  ]
+}
