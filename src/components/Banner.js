@@ -119,8 +119,8 @@ export default class Banner extends React.Component {
           </div>
           <div className="valueprop-details">
             <p>
-              Select your dates, tell us where you all come from, explore
-              destinations to meet each other at the lowest fare
+            <b>From different departure cities, explore
+              all common destinations to meet each other at the lowest fare</b>
             </p>
           </div>
 

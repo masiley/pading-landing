@@ -48,29 +48,29 @@ export default class Map extends React.Component {
         </Marker>
         <Marker latitude={54.7} longitude={1.8}>
           <button className="marker-destination" onClick={this.props.amsterdam}>
-            <div className="marker-destination-arrow"></div>
             <p>125€</p>
+            <div className="marker-destination-arrow"></div>
           </button>
         </Marker>
 
         <Marker latitude={50} longitude={15.5}>
           <button className="marker-destination" onClick={this.props.budapest}>
-            <div className="marker-destination-arrow"></div>
             <p>78€</p>
+            <div className="marker-destination-arrow"></div>
           </button>
         </Marker>
 
         <Marker latitude={43.5} longitude={12}>
           <button className="marker-destination" onClick={this.props.naples}>
-            <div className="marker-destination-arrow"></div>
             <p>97€</p>
+            <div className="marker-destination-arrow"></div>
           </button>
         </Marker>
 
         <Marker latitude={40.5} longitude={-7}>
           <button className="marker-destination" onClick={this.props.cordoba}>
-            <div className="marker-destination-arrow"></div>
             <p>154€</p>
+            <div className="marker-destination-arrow"></div>
           </button>
         </Marker>
       </ReactMapGL>

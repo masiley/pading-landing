@@ -12,7 +12,7 @@
     }
     .simple-solution-content {
       text-align: center;
-      margin: 0 5rem 0 5rem;
+      padding: 0 5rem 0 5rem;
     }
   }
 }
@@ -31,7 +31,7 @@
 @media (min-width: 901px) {
   .wrapper {
     .simple-solution {
-      padding: 3rem 5rem 3rem 5rem;
+      padding: 10rem 5rem 10rem 5rem;
       .simple-solution-gif {
         width: 50%;
       }
@@ -53,7 +53,7 @@
       }
       .simple-solution-content {
         width: 60%;
-        padding: 0 10rem 0 10rem;
+        padding: 0 5rem 0 5rem;
       }
     }
   }
