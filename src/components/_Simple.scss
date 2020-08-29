@@ -5,14 +5,13 @@
     align-items: center;
     .simple-solution-gif {
       text-align: center;
-      margin: 0 5rem 0 5rem;
+
       img {
         transition-duration: 1s;
       }
     }
     .simple-solution-content {
       text-align: center;
-      padding: 0 5rem 0 5rem;
     }
   }
 }
@@ -46,13 +45,13 @@
 @media (min-width: 1201px) {
   .wrapper {
     .simple-solution {
-      padding: 8rem 10rem 3rem 10rem;
+      padding: 8rem 10rem 0 10rem;
       .simple-solution-gif {
         text-align: center;
-        width: 40%;
+        width: 30%;
       }
       .simple-solution-content {
-        width: 60%;
+        width: 70%;
         padding: 0 5rem 0 5rem;
       }
     }
