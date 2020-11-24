@@ -20,7 +20,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         <SweetAlert>
           {swal.fire({
             icon: "error",
-            title: "This email address is not valid. Can you check it?",
+            title: "Sorry, this email address is not valid",
             showConfirmButton: false,
             allowEnterKey: "true",
             allowOutsideClick: "true",
@@ -38,13 +38,13 @@ const CustomForm = ({ status, message, onValidated }) => {
         <SweetAlert>
           {swal.fire({
             icon: "info",
-            title: "You are already part of our community :)",
+            title: "You are already part of our community but you can still follow us on Facebook and Instagram!",
             showConfirmButton: false,
             allowEnterKey: "true",
             allowOutsideClick: "true",
             buttonsStyling: "false",
             html:
-              '<br/><p>You can still follow us on social media!</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+              '<br/><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -52,13 +52,13 @@ const CustomForm = ({ status, message, onValidated }) => {
         <SweetAlert>
           {swal.fire({
             icon: "success",
-            title: "Thank you for believing in us! You are now registered",
+            title: "Thanks for registrating! You can also follow us on Facebook and Instagram",
             showConfirmButton: false,
             allowEnterKey: "true",
             allowOutsideClick: "true",
             buttonsStyling: "false",
             html:
-              '<br/><p>You can also follow us on social media</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+              '<br/><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -66,7 +66,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       <input
         ref={(node) => (email = node)}
         type="email"
-        placeholder="Your email"
+        placeholder="Register with your email"
       />
 
       <button
@@ -74,7 +74,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending"}
       >
-        Try Pading
+        <i class="fas fa-paper-plane fa-lg"></i>
       </button>
     </div>
   );

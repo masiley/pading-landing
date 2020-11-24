@@ -24,6 +24,24 @@
           .why-to-use-it-details {
             text-align: left;
             width: 70%;
+            p {
+              font-weight: bold;
+            }
+            .focus-text {
+              color: #262626;
+              position: relative;
+              display: inline-block;
+              .underline {
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                right: 0;
+                bottom: 0.2rem;
+                height: 0;
+                border: 0.4rem solid #f6b040;
+                border-radius: 0.2rem;
+              }
+            }
           }
         }
       }
@@ -44,7 +62,7 @@
 }
 
 // small mobile screens landscape
-@media (min-width: 500px) and (orientation: landscape) {
+@media (min-width: 300px) and (orientation: landscape) {
   .wrapper {
     .why-to-use-it {
       display: flex;
@@ -164,7 +182,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 0 2.5rem 5rem 2.5rem;
+      padding: 5rem 7rem 12rem 7rem;
       .why-to-use-it-text {
         width: 60%;
       }
@@ -179,7 +197,7 @@
 @media (min-width: 1601px) {
   .wrapper {
     .why-to-use-it {
-      margin: 0 5rem 15rem 5rem;
+      margin: 5rem 15rem;
     }
   }
 }

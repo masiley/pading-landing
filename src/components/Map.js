@@ -12,7 +12,7 @@ export default class Map extends React.Component {
   state = {
     viewport: {
       width: "100vw",
-      height: "85vh",
+      height: "100vh",
       latitude: 48.1078,
       longitude: 7.0385,
       zoom: 2.5,

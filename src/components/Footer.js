@@ -38,34 +38,36 @@ const CustomForm = ({ status, message, onValidated }) => {
       {status === "error" && (
         <SweetAlert>
           {swal.fire({
-            icon: 'info',
-            title: 'You are already part of our community :)',
+            icon: "info",
+            title: "You are already part of our community but you can still follow us on Facebook and Instagram!",
             showConfirmButton: false,
-            allowEnterKey: 'true',
-            allowOutsideClick: 'true',
-            buttonsStyling: 'false',
-            html: '<br/><p>You can still follow us on social media!</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+            allowEnterKey: "true",
+            allowOutsideClick: "true",
+            buttonsStyling: "false",
+            html:
+              '<br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
       {status === "success" && (
         <SweetAlert>
           {swal.fire({
-            icon: 'success',
-            title: 'Thank you for believing in us! You are now registered',
+            icon: "success",
+            title: "Thanks for registrating! You can also follow us on Facebook and Instagram",
             showConfirmButton: false,
-            allowEnterKey: 'true',
-            allowOutsideClick: 'true',
-            buttonsStyling: 'false',
-            html: '<br/><p>You can also follow us on social media :)</p><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+            allowEnterKey: "true",
+            allowOutsideClick: "true",
+            buttonsStyling: "false",
+            html:
+              '<br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
-      
+
       <input
         ref={(node) => (email = node)}
         type="email"
-        placeholder="Your email"
+        placeholder="Register with your email"
       />
 
       <button
@@ -73,7 +75,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending"}
       >
-        Try Pading
+        <i class="fas fa-paper-plane fa-lg"></i>
       </button>
     </div>
   );
@@ -94,8 +96,8 @@ export default class Footer extends React.Component {
         <div className="footer">
           <div className="footer-menu">
             <div className="footer-menu-email">
-              <h4>Explore the next destination to meet with your friends and
-                family</h4>
+              <p><b>Travel and meet with your friends and
+                family</b></p>
               <div className="footer-menu-email-form">
               <MailchimpSubscribe
               url={url}
@@ -112,9 +114,6 @@ export default class Footer extends React.Component {
             <div className="footer-menu-app-contact">
               <div className="footer-menu-app">
                 <h4>Pading</h4>
-                <a className="btn-product" onClick={this.props.scrollToTop}>
-                  <p>Product</p>
-                </a>
                 <Popup
                   modal
                   trigger={
@@ -125,6 +124,9 @@ export default class Footer extends React.Component {
                 >
                   <Faq />
                 </Popup>
+                <a className="btn-product">
+                  <p>Privacy policy</p>
+                </a>
               </div>
               <div className="footer-menu-contact">
                 <h4>Contact</h4>
@@ -159,7 +161,7 @@ export default class Footer extends React.Component {
                 position: "relative",
                 cursor: "pointer",
                 display: "block",
-                zIndex: 999
+                zIndex: 1
               }}
             >
               <img
@@ -168,6 +170,7 @@ export default class Footer extends React.Component {
               />
             </a>
           </div>  
+          <button className="scrollup" onClick={this.props.scrollToTop}><i class="fas fa-chevron-up fa-lg"></i></button>
         </div>
       </div>
     );

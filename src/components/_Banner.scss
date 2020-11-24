@@ -4,23 +4,23 @@
   align-items: center;
   position: relative;
   margin-top: 7rem;
+  height: calc(100vh - 7rem);
   .valueprop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     .valueprop-title {
-      text-align: center;
+      text-align: left;
     }
     .valueprop-details {
-      text-align: center;
-      padding: 0 3rem 0 3rem;
+      text-align: left;
     }
     .email-form-banner {
       position: relative;
-      text-align: center;
+      text-align: left;
       background: transparent;
-      margin-top: 2rem;
       input {
         font-family: "Roboto", sans-serif;
         height: 5.5rem;
@@ -29,7 +29,7 @@
         color: #373737;
         border: solid #29b3c1;
         text-align: left;
-        border-radius: 2.5rem;
+        border-radius: 1rem;
         font-size: 1.8rem;
         padding: 1rem 10rem 1rem 1rem;
         &:focus {
@@ -41,10 +41,14 @@
         position: absolute;
         right: 0rem;
         height: 5.5rem;
-        border-radius: 5rem;
+        padding: 0 2rem;
+        border-radius: 1rem;
         border: none;
+        background-color: #29b3c1;
+        color: white;
         font-weight: 700;
         &:hover {
+          transition: background-color 0.5s;
           background-color: #53c2cd;
         }
         &:focus {
@@ -53,30 +57,75 @@
       }
     }
   }
-  .swal2-icon.swal2-success {
-    border-color: #3e936f !important;
-  }
-  .alertmail-social {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-      background: transparent;
-      width: 4rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      color: #29b3c1;
-    }
-    :hover {
-      color: #53c2cd;
-    }
-  }
   .map {
     display: flex;
     justify-content: center;
     align-items: center;
     pointer-events: none;
+  }
+}
+.swal2-popup {
+  border-radius: 1rem !important;
+  padding: 2rem 5rem !important;
+}
+.swal2-icon.swal2-success {
+  border-color: #3e936f !important;
+  color: #3e936f !important;
+  border-width: 0.5rem !important;
+  .swal2-success-line-tip {
+    background-color: #3e936f !important;
+  }
+  .swal2-success-line-long {
+    background-color: #3e936f !important;
+  }
+  .swal2-success-ring {
+    border-color: #3e936f !important;
+    color: #3e936f !important;
+    border-width: 0.5rem !important;
+  }
+}
+.swal2-icon.swal2-info {
+  border-color: #f49d11 !important;
+  color: #f49d11 !important;
+  border-width: 0.5rem !important;
+}
+.swal2-icon.swal2-error {
+  border-color: #e01f66 !important;
+  color: #e01f66 !important;
+  border-width: 0.5rem !important;
+
+  .swal2-x-mark-line-left {
+    background-color: #e01f66 !important;
+  }
+  .swal2-x-mark-line-right {
+    background-color: #e01f66 !important;
+  }
+  .alertmail-social {
+    text-align: center;
+    a {
+      background: transparent;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      color: #3e936f !important;
+      font-size: 4rem;
+    }
+    :hover {
+      color: rgba(62, 147, 111, 0.8) !important;
+    }
+  }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+  .banner {
+    .valueprop {
+      padding: 0 2rem;
+      .valueprop-title {
+        text-align: left;
+        h1 {
+          font-size: 2.8rem;
+        }
+      }
+    }
   }
 }
 
@@ -87,37 +136,20 @@
     .valueprop {
       background-color: white;
       width: 100%;
-      padding: 0 3rem;
-      z-index: 3;
+      padding: 0 5rem;
       .valueprop-title {
-        text-align: center;
-        h1 {
-          font-size: 3rem;
-        }
+        text-align: left;
       }
-      .valueprop-details {
-        display: none;
-      }
-    }
-    .email-form-banner {
-      input {
-        min-width: 33rem;
-        &:focus {
-          min-width: 35rem;
+      .email-form-banner {
+        width: 100%;
+        input {
+          width: 100%;
         }
       }
     }
-  }
-  .map {
-    max-width: 100vw;
-    max-height: 40%;
-  }
-}
-
-@media (orientation: landscape) {
-  .banner {
-    .fa-chevron-down {
-      display: none;
+    .map {
+      max-width: 100vw;
+      max-height: 40%;
     }
   }
 }
@@ -127,22 +159,17 @@
     margin-bottom: 2rem;
     .valueprop {
       max-width: 50vw;
-      padding: 1rem;
+      padding: 2rem;
       .valueprop-title {
         h1 {
           font-size: 3rem;
         }
       }
-      .valueprop-details {
-        display: none;
-      }
     }
     .email-form-banner {
+      width: 100%;
       input {
-        min-width: 30rem;
-        &:focus {
-          min-width: 32rem;
-        }
+        width: 100%;
       }
     }
     .map {
@@ -154,28 +181,24 @@
 @media (min-width: 901px) and (orientation: landscape) {
   .banner {
     .valueprop {
-      margin-left: 5rem;
-      padding: 2rem;
+      height: 100%;
+      flex-grow: 1;
+      padding: 13rem;
+      margin-top: 14rem;
+      margin-right: -25rem;
     }
     .email-form-banner {
+      margin-top: 5rem;
+      width: 100%;
       input {
-        min-width: 33rem;
+        width: 100%;
         &:focus {
-          min-width: 35rem;
+          width: 100%;
         }
       }
     }
     .map {
-      max-width: 40vw;
-    }
-  }
-}
-
-@media (min-width: 1200px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
-      margin-left: 20rem;
-      padding: 3rem;
+      width: 70%;
     }
   }
 }

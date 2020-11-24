@@ -14,7 +14,7 @@ export default function Why() {
                 </div>
                 <div className="why-to-use-it-text" id="why">
                     <div className="why-to-use-it-title">
-                        <h2>Why use pading?</h2>
+                        <h2>Why use pading ?</h2>
                     </div>
                     <div className="why-to-use-it-content">
                         <div className="why-to-use-it-content-card">           
@@ -23,7 +23,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h3>Save Time</h3>
-                                <p><b>In just one search</b>, you and your team can find your next common destination</p>
+                                <p><div className="focus-text"><span className="underline"></span>In just one search</div>, you and your team can find your next common destination</p>
                             </div>
                         </div>
                         <div className="why-to-use-it-content-card">
@@ -32,7 +32,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h3>Save Money</h3>
-                                <p><b>Explore the cheapest destinations</b> with people you plan to meet</p>
+                                <p><div className="focus-text"><span className="underline"></span>Explore the cheapest destinations</div> with people you plan to meet</p>
                             </div>
                         </div>
                         <div className="why-to-use-it-content-card">
@@ -41,7 +41,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h3>Book Easily</h3>
-                                <p>Share trip details with your team,<b> book easily... travel and meet</b></p>
+                                <p>Share trip details <div className="focus-text"><span className="underline"></span>with your team</div>,book easily... travel and meet</p>
                             </div>
                         </div>
                     </div>

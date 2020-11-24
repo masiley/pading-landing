@@ -13,13 +13,12 @@ export default function Simple() {
                     </video>
                 </div>
                 <div className="simple-solution-content">
-                    <h2>Simple solutions for complex connections!</h2>
+                    <h2>Simple solution for complex connections !</h2>
                     <br/>
-                    <p>Planning an Erasmus meeting, joining friends living abroad, gathering with family</p>
-                    <h4> Pading is a simple solution built to bring you closer to each other</h4>
+                    <p><b>Planning an Erasmus meeting, joining friends living abroad, gathering with family</b></p>
+                    <p><b>Pading is a simple solution built to bring you closer to each other</b></p>
                 </div>
             </div>
-            
         </div>
     )
 }

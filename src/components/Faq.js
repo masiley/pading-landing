@@ -11,7 +11,7 @@ import simplelogo from '../img/simple-logo.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    margin: "200ox",
+    padding: "2rem",
     display: "flex",
     "text-align": "center",
     "flex-direction": "column",
@@ -39,16 +39,16 @@ export default function Faq() {
           id="panel1a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>Who are you hidden behind Pading?</h4>
+            <p><div className="focus-text"><span className="underline"></span>Who are you</div> behind Pading ?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>We are Mamadou, Louis and Cristobal from Manchester, Lille and Córdoba.
-            Thanks to Erasmus, we all had the great chance to travel abroad and know international people that are close friends now.
-            <br/>
-            <br/>
-            As it can be complex to meet somewhere with long-distance friends and family, we decided to launch Pading <b>to help us and to help you finding the best destinations where to meet</b>.</p>
+            <p>We are three good friends from Manchester, Lille and Córdoba.
+              We all had the great chance to travel abroad and know international people that are close friends now.
+              As it can be complicated to meet somewhere with long-distance friends and family, we decided to launch Pading
+              to help people finding the best destinations where to meet and book all tickets easily.
+            </p>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -59,12 +59,12 @@ export default function Faq() {
           id="panel2a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What are the strenghts of Pading?</h4>
+            <p>Why should I <div className="focus-text"><span className="underline"></span>use Pading ?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>Pading is the only travel comparator that allows you to find common destinations according to multi departure cities and various dates.</b>
+            <p>Pading is the only travel comparator that allows you to find common destinations from multi departure cities at some dates.
               <br/>
               <br/>
               Andy and Juli are leaving from München and Frankfürt.
@@ -73,10 +73,10 @@ export default function Faq() {
               <br/>
               Eilidh is leaving from Glasgow.
               <br/>
-              Violaine, Ludi, Louis and Dimitri are leaving from Paris.
+              Violaine and Ludivine are leaving from Paris.
               <br/>
               <br/>
-              Our algorithm searches for all the existing travel combinations to meet in a same place. <b>The cheapest destinations for the whole team are highlighted</b>.
+              Our algorithm searches for all the existing travel combinations to meet in a same place. The cheapest destinations for the whole team are highlighted.
               </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -88,15 +88,15 @@ export default function Faq() {
           id="panel3a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>How do you find for us the cheapest prices?</h4>
+            <p>How does Pading finds the <div className="focus-text"><span className="underline"></span>cheapest prices ?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>We work with our partner Kiwi to enjoy the <b>520 billion different route combinations of low-cost and full-service flights, trains and buses</b>. Our algorithm integrates all this data and find for you the cheapest common destinations.
+            <p>We work with our partners Kiwi and Trainline to enjoy <b> billion different route combinations of flights and trains</b>. Our algorithm integrates all this data and finds for you the cheapest common destinations.
             <br/>
             <br/>
-            You just have to select the next place you would like to meet with your friends or family and book your tickets.
+            You just have to select the next place you would like to meet with your friends/family and book your tickets.
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -108,29 +108,26 @@ export default function Faq() {
           id="panel4a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>Why do we save a lot of time organizing our next meeting with Pading?</h4>
+            <p>Why organizing our next meeting with Pading is <div className="focus-text"><span className="underline"></span>so easy ?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>Without Pading, organizing the next meeting with your long-distance friends or family can be rather complicated:
+            <p>Without Pading, organizing the next meeting with your long-distance friends/family can be complicated:
+              <ul>
+                <li>thinking of a destination</li>
+                <li>looking at all the travel possibilities and all the prices for each people</li>
+                <li>proposing another destination if this one does not match everyone's criteria</li>
+                <li>doing the same again and again until we are good</li>
+              </ul>
               <br/>
-              - Proposing a destination
+              With Pading, it looks like this:
               <br/>
-              - Looking at all the travel possibilities and all the prices for each people
-              <br/>
-              - Proposing another destination if this one does not match everyone's criteria
-              <br/>
-              - Do the same X times until it is good
-              <br/>
-              <br/>
-              <b>With Pading, it looks like this:
-              <br/>
-              - Fill in the dates and enter all the departure cities you and your friends/family come from
-              <br/>
-              - Select your common destination among the cheapest ones
-              <br/>
-              - Travel and meet</b>
+              <ul>
+                <li>Thinking of a destination</li>
+                <li>Filling in the dates and enter all the departure cities you are coming from</li>
+                <li>Selecting the common destination among the cheapest ones</li>
+              </ul>
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -142,13 +139,13 @@ export default function Faq() {
           id="panel5a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What means of transport can be booked?</h4>
+            <p>What <div className="focus-text"><span className="underline"></span>means of transport</div> can be booked ?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>We look at all the travel possibilities, in the air and on the ground to connect any point in the world to any point.
-              <b>We combine airlines, trains and buses</b> to make you arrive at your destination and meet each other.
+            <p>We look at all the travel possibilities, in the air and on the rails to connect any point in the world to any point.
+              We consider flights and trains to make you arrive at your destination to meet each other.
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -160,17 +157,22 @@ export default function Faq() {
           id="panel6a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>How do you integrate Ecology into Pading?</h4>
+            <p>How <div className="focus-text"><span className="underline"></span>concerns for ecology</div> are integrated into Pading ?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>This is honestly our biggest dilemma. How can we facilitate travel and respect our planet as well as possible?
+            <p>This is a big dilemma. How to facilate travel while considering ecology?
               <br/>
-              <br />
-              <b>We want to empower each traveler to offset his co2 emissions</b>. For this reason we calculate the climate impact of each destination.
-              <br />
-              From our side, <b>we plant trees</b> to get a neutral Co2 website <b>and develop as well as possible train journey</b>.
+              <br/>
+              We want to empower each traveler to offset his/her co2 emissions. For this reason we calculate the climate impact of each destination.
+              <br/>
+              <br/>
+              From our side, we do two things:
+              <ul>
+                  <li>we plant trees to get a neutral Co2 website</li>
+                  <li>we develop and promote as well as possible train journey</li>
+              </ul>
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -182,23 +184,23 @@ export default function Faq() {
           id="panel7a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>Do you make money with this service?</h4>
+            <p>How Pading can be <div className="focus-text"><span className="underline"></span>100% free ?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p>Pading is a user interface. The booking is made on Kiwi secure website that offers very good guarantee protecting customers from schedule change, delays and cancellations.
-            <br/>
-            <br/>
-            <b>We work as an affiliate with Kiwi booking platform that gives us a 3% commission of each booking amount.</b>
-            <br/>
-            <br/>
-            - Kiwi earns money from carriers
-            <br/>
-            - We earn money from Kiwi
-            <br/>
-            - You find the cheapest destination without any fee.
-            <br/>
+            <p>Pading is an user interface. The booking is made on Kiwi and Trainline secure websites that offer very good guarantee protecting customers from schedule change, delays and cancellations.
+              <br/>
+              <br/>
+              We work as a partner with Kiwi and Trainline booking platforms. For each booking, they give us a commission.
+              <br/>
+              <br/>
+              This way:
+              <ul>
+                <li>Kiwi and Trainline earn money from carriers</li>
+                <li>We earn money from Kiwi and Trainline</li>
+                <li>You benefit from the cheapest prices without any additionnal fee</li>
+              </ul>
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -210,16 +212,18 @@ export default function Faq() {
           id="panel8a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What is Kiwi, the Website where I will be redirected to book your tickets?</h4>
+            <p>Who are <div className="focus-text"><span className="underline"></span>Kiwi and Trainline, the two partners</div> you are working with ?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>Kiwi is a big, well known and secure booking platform in the travel industry</b>. We work with them to benefit from its data combining 520 billion different route combinations with flights, trains and buses.
+            <p>Kiwi is a big, well known and secure booking platform in the travel industry. We work with them to benefit from its data combining 520 billion different route combinations.
+              <br/>
+              Trainline is Europe's leading train database. They bring together routes, fares and journey times from more than 270 train and coach companies in 45 countries.
               <br/>
               <br/>
-              Pading is a user interface. We integrate data from Kiwi to search for common destinations according to dates and multiple departure cities.
-              <b>The booking is made on Kiwi secure website that offers a 24/7 customer support and great guarantee</b> in case of schedule change, delays and cancellations.
+              Pading is an user interface. We feed our algorithms with data from Kiwi and Trainline in order to search for common destinations from multiple departure cities and given dates.
+              The booking is made on Kiwi and Trainline secure websites that offer very good support and guarantee.
             </p>
           </Typography>
         </ExpansionPanelDetails>
@@ -231,23 +235,22 @@ export default function Faq() {
           id="panel9a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <h4>What is your vision for the development of Pading?</h4>
+            <p>What is Pading's <div className="focus-text"><span className="underline"></span>vision of travel ?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography className="faq-answers">
-            <p><b>We want to make long-distance friendships and family meetings easier.
+            <p>We want to make long-distance friends and family meetings easier.
               <br/>
-              We are waiting for your feedback and recommendations to develop Pading in the right direction.</b>
+              To reach our goal, we are waiting for your feedback and recommendations to develop Pading in the right direction.
               <br/>
               <br/>
-              This is what we imagine for later:
-              <br/>
-              - To allow an even more detailed and powerful research (flexible dates, vehicle type, etc.)
-              <br/>
-              - To propose you the best value for money housing once you know where and when you will meet.
-              <br/>
-              - To explore the best dates for a destination already chosen so that your trip will be as cheap as possile.
+              These are some tracks for the development of Pading:
+              <ul>
+                <li>Allowing an even more customized and powerful research</li>
+                <li>Adding housing proposals in the calculation of the cheapest common destinations to offer you the best global value for money</li>
+                <li>Exploring the best dates for a destination already chosen so that your trip will be as cheap as possile</li>
+              </ul>
             </p>
           </Typography>
         </ExpansionPanelDetails>
