@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./_Footer.scss";
 import Faq from "./Faq";
 import Popup from "reactjs-popup";
@@ -124,9 +125,9 @@ export default class Footer extends React.Component {
                 >
                   <Faq />
                 </Popup>
-                <a className="btn-product">
+                <Link to="/privacypolicy">
                   <p>Privacy policy</p>
-                </a>
+                </Link>
               </div>
               <div className="footer-menu-contact">
                 <h4>Contact</h4>

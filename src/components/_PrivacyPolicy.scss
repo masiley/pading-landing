@@ -1,0 +1,48 @@
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  h2 {
+    color: #262626;
+  }
+  .privacy-policy-subtitles {
+    color: #3e936f;
+    font-weight: bold;
+  }
+  .focus-text {
+    color: #262626;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+  .underline {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0.2rem;
+    height: 0;
+    border: 0.4rem solid #f6b040;
+    border-radius: 0.2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #29b3c1;
+  }
+}
+
+@media (max-width: 900px) {
+  .privacy-policy {
+    margin: 10rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .privacy-policy {
+    margin: 10rem 25rem;
+  }
+}

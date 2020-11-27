@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./_NavBar.scss";
 import logo from "../img/pading.png";
 
@@ -9,9 +10,9 @@ export default class NavBar extends React.Component {
     return (
       <div className="navbar">
         <div className="navbar-brand">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Pading find the perfect place to meet" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-menu">
           <div className="navbar-social">
