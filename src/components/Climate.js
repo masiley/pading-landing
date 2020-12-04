@@ -1,5 +1,5 @@
 import React from 'react';
-import './_MyClimate.scss';
+import './_Climate.scss';
 import mapa from '../img/mapa.png';
 
 
@@ -15,7 +15,7 @@ export default function Simple() {
                     <p><b>Pading calculates the climate impact of each destination so you can give your preference to low carbon footprint destination and compensate your Co2 emissions</b></p>
                 </div>
                 <div className="myclimate-img">
-                <i class="fas fa-globe-europe"></i>
+                <i className="fas fa-globe-europe"></i>
                 </div>
             </div>
         </div>

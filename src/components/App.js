@@ -6,13 +6,12 @@ import Why from "./Why";
 import How from "./How";
 import Simple from "./Simple";
 import Cards from "./Cards";
-import MyClimate from "./MyClimate";
+import Climate from "./Climate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Footer from "./Footer";
 import "./_App.scss";
 
 export default class App extends React.Component {
-  
 
   scrollToTop() {
     document.documentElement.scrollTo({
@@ -32,7 +31,7 @@ export default class App extends React.Component {
             <Route exact path="/" component={Why} />
             <Route exact path="/" component={How} />
             <Route exact path="/" component={Simple} />
-            <Route exact path="/" component={MyClimate} />
+            <Route exact path="/" component={Climate} />
             <Route path="/privacypolicy" component={PrivacyPolicy} />
             <Footer scrollToTop={this.scrollToTop} />
           </div>

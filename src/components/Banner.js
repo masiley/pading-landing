@@ -44,7 +44,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             allowOutsideClick: "true",
             buttonsStyling: "false",
             html:
-              '<br/><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+              '<br/><br/><div className="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i className="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i className="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -58,7 +58,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             allowOutsideClick: "true",
             buttonsStyling: "false",
             html:
-              '<br/><br/><div class="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a></div>',
+              '<br/><br/><div className="alertmail-social"><a href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325" rel="noopener noreferrer" target="_blank"><i className="fab fa-facebook"></i></a><a href="https://www.instagram.com/padingapp/?hl=fr" rel="noopener noreferrer" target="_blank"><i className="fab fa-instagram"></i></a></div>',
           })}
         </SweetAlert>
       )}
@@ -74,7 +74,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending"}
       >
-        <i class="fas fa-paper-plane fa-lg"></i>
+        <i className="fas fa-paper-plane fa-lg"></i>
       </button>
     </div>
   );
@@ -137,7 +137,7 @@ export default class Banner extends React.Component {
             />
           </div>
         </div>
-     
+               
         <div className="map">
           <Map
             budapest={this.scrollToBudapest}

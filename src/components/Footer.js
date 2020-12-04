@@ -76,7 +76,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending"}
       >
-        <i class="fas fa-paper-plane fa-lg"></i>
+        <i className="fas fa-paper-plane fa-lg"></i>
       </button>
     </div>
   );
@@ -155,10 +155,10 @@ export default class Footer extends React.Component {
           </div> 
             <div className="tree-nations">
             <a
-              href="https://tree-nation.com/profile/impact/pading-1#co2"
+              src="https://tree-nation.com/profile/impact/pading-1#co2"
               target="_blank"
               style={{
-                "padding-bottom": "2rem",
+                paddingBottom: "2rem",
                 position: "relative",
                 cursor: "pointer",
                 display: "block",
@@ -171,7 +171,7 @@ export default class Footer extends React.Component {
               />
             </a>
           </div>  
-          <button className="scrollup" onClick={this.props.scrollToTop}><i class="fas fa-chevron-up fa-lg"></i></button>
+          <button className="scrollup" onClick={this.props.scrollToTop}><i className="fas fa-chevron-up fa-lg"></i></button>
         </div>
       </div>
     );
