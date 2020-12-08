@@ -32,7 +32,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h3>Save Money</h3>
-                                <p><b className="focus-text"><span className="underline"></span>Explore the cheapest destinations</b>  with people you plan to meet</p>
+                                <p>Explore the <b className="focus-text"><span className="underline"></span>cheapest destinations</b> with people you plan to meet</p>
                             </div>
                         </div>
                         <div className="why-to-use-it-content-card">
@@ -41,7 +41,7 @@ export default function Why() {
                             </div>
                             <div className="why-to-use-it-details">
                                 <h3>Book Easily</h3>
-                                <p>Share trip details <b className="focus-text"><span className="underline"></span>with your team</b>, book easily... travel and meet</p>
+                                <p>Share trip details with your team, <b className="focus-text"><span className="underline"></span>book easily</b>... travel and meet</p>
                             </div>
                         </div>
                     </div>

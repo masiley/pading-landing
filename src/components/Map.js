@@ -11,29 +11,28 @@ Geocode.setApiKey(API_KEY);
 export default class Map extends React.Component {
   state = {
     viewport: {
-      width: "100vw",
-      height: "100vh",
+      width: "100%",
+      height: "100%",
       latitude: 48.1078,
       longitude: 7.0385,
       zoom: 2.5,
       minZoom: 2.5,
       maxZoom: 2.5,
       interactive: false,
-      attributionControl: false,
-    },
+      attributionControl: false
+    }
   };
 
   render() {
     return (
-      <div>
+      <div className="mapbox">
         {console.log(this.state.viewport)}
         <ReactMapGL
         {...this.state.viewport}
         mapboxApiAccessToken="pk.eyJ1IjoibG91aXMxNDA0IiwiYSI6ImNrNm0zOGFkMDBqdG8zZXA3NGR5ejhzYnQifQ.Yt9WzWg8hdm6b9h5k5sxHw"
         mapStyle="mapbox://styles/louis1404/ckbfbhg8x21z51ik4rb1ylkrn"
         onViewportChange={(viewport) => this.setState({ viewport })}
-        >
-        
+        >        
           <Marker latitude={55.86515} longitude={-4.25763}>
             <div className="marker-departure-city">
               <img src={yellowMarker} alt="Departure city" />

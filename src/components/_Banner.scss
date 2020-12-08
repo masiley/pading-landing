@@ -58,10 +58,12 @@
     }
   }
   .map {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    height: 100%;
   }
 }
 .swal2-popup {
@@ -139,7 +141,7 @@
     }
     .map {
       max-width: 100vw;
-      max-height: 40%;
+      max-height: 35%;
     }
   }
 }
@@ -171,7 +173,6 @@
 @media (min-width: 901px) and (orientation: landscape) {
   .banner {
     .valueprop {
-      height: 100%;
       flex-grow: 1;
       padding: 13rem;
       margin-top: 14rem;
@@ -188,7 +189,7 @@
       }
     }
     .map {
-      width: 70%;
+      width: 70vw;
     }
   }
 }

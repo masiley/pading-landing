@@ -104,6 +104,7 @@ export default class Banner extends React.Component {
     element.scrollIntoView(false)
   }
   
+  
   render() {
 
     const url =
@@ -138,7 +139,7 @@ export default class Banner extends React.Component {
           </div>
         </div>
                
-        <div className="map">
+        <div className="map">          
           <Map
             budapest={this.scrollToBudapest}
             naples={this.scrollToNaples}

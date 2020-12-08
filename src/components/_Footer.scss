@@ -109,9 +109,9 @@
     .scrollup {
       position: absolute;
       bottom: 2rem;
-      right: 2rem;
-      height: 6rem;
-      width: 6rem;
+      left: 2rem;
+      height: 5.5rem;
+      width: 5.5rem;
       border: none;
       border-radius: 50%;
       background-color: #29b3c1;
@@ -192,5 +192,12 @@
         }
       }
     }
+  }
+}
+
+// small screens
+@media (max-width: 600px) {
+  .scrollup {
+    display: none;
   }
 }
