@@ -10,7 +10,7 @@ export default class NavBar extends React.Component {
     return (
       <div className="navbar">
         <div className="navbar-brand">
-          <Link to="/">
+          <Link to="/" onClick={this.props.scrollToTop}>
             <img src={logo} alt="Pading find the perfect place to meet" />
           </Link>
         </div>

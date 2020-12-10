@@ -24,7 +24,7 @@ export default class App extends React.Component {
   loadMap() {
     {setTimeout(() => {
       document.getElementById("app-spinner").style.visibility="hidden"
-    }, 2000)}
+    },1500)}
   }
 
   render() {
@@ -35,7 +35,7 @@ export default class App extends React.Component {
           {this.loadMap()}
           
             <div id="app-spinner"><img src={padingLogo}/></div>
-            <NavBar />
+            <NavBar scrollToTop={this.scrollToTop}/>
             <Route exact path="/" component={Banner} />
             <Route exact path="/" component={Cards} />
             <Route exact path="/" component={Why} />

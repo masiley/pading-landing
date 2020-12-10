@@ -125,7 +125,7 @@ export default class Footer extends React.Component {
                 >
                   <Faq />
                 </Popup>
-                <Link to="/privacypolicy">
+                <Link to="/privacypolicy" onClick={this.props.scrollToTop}>
                   <p>Privacy policy</p>
                 </Link>
               </div>
@@ -176,7 +176,6 @@ export default class Footer extends React.Component {
               </a>
             </a>
           </div>  
-          <button className="scrollup" onClick={this.props.scrollToTop}><i className="fas fa-chevron-up fa-lg"></i></button>
         </div>
       </div>
     );
