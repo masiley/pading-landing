@@ -10,7 +10,7 @@ import Climate from "./Climate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Footer from "./Footer";
 import "./_App.scss";
-import padingLogo from "../img/simple-logo.png";
+import bigLoaderPading from "../img/big-loader-pading.gif";
 
 export default class App extends React.Component {
 
@@ -21,20 +21,20 @@ export default class App extends React.Component {
     })
   }
 
-  loadMap() {
-    {setTimeout(() => {
-      document.getElementById("app-spinner").style.visibility="hidden"
-    },1500)}
-  }
+ 
 
   render() {
     return (
       <div>
         <BrowserRouter>
           <div>
-          {this.loadMap()}
-          
-            <div id="app-spinner"><img src={padingLogo}/></div>
+
+          {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 2000)}
+           
+            <div id="big-loader">
+              <img src={bigLoaderPading} alt="loader pading app"/>
+            </div>
+            
             <NavBar scrollToTop={this.scrollToTop}/>
             <Route exact path="/" component={Banner} />
             <Route exact path="/" component={Cards} />

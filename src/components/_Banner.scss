@@ -2,70 +2,152 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   margin-top: 7rem;
-  height: calc(100vh - 7rem);
-  .valueprop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    .valueprop-title {
-      text-align: left;
-    }
-    .valueprop-details {
-      text-align: left;
-    }
-    .email-form-banner {
-      position: relative;
-      text-align: left;
-      background: transparent;
-      input {
-        font-family: "Roboto", sans-serif;
-        height: 5.5rem;
-        font-weight: 400;
-        background: white;
-        color: #373737;
-        border: solid #29b3c1;
-        text-align: left;
-        border-radius: 1rem;
-        font-size: 1.8rem;
-        padding: 1rem 10rem 1rem 1rem;
-        &:focus {
-          transition-duration: 0.5s;
-          outline: 0;
-        }
-      }
-      .btn-blue {
-        position: absolute;
-        right: 0rem;
-        height: 5.5rem;
-        padding: 0 2rem;
-        border-radius: 1rem;
-        border: none;
-        background-color: #29b3c1;
-        color: white;
-        font-weight: 700;
-        &:hover {
-          transition: background-color 0.5s;
-          background-color: #53c2cd;
-        }
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-  }
+  min-height: calc(100vh - 7rem);
   .map {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
     height: 100%;
+    .valueprop {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 1rem;
+      padding: 1rem;
+      .valueprop-title {
+        text-align: left;
+      }
+      .valueprop-details {
+        text-align: left;
+      }
+      .email-form-banner {
+        position: relative;
+        text-align: left;
+        background: transparent;
+        margin-top: 2rem;
+        width: 100%;
+        input {
+          width: 100%;
+          &:focus {
+            width: 100%;
+          }
+        }
+
+        input {
+          font-family: "Roboto", sans-serif;
+          height: 5.5rem;
+          font-weight: 400;
+          background: white;
+          color: #373737;
+          border: solid #29b3c1;
+          text-align: left;
+          border-radius: 1rem;
+          font-size: 1.6rem;
+          padding: 1rem;
+          &:focus {
+            transition-duration: 0.5s;
+            outline: 0;
+          }
+        }
+        .btn-blue {
+          position: absolute;
+          right: 0rem;
+          height: 5.5rem;
+          padding: 0 2rem;
+          border-radius: 1rem;
+          border: none;
+          background-color: #29b3c1;
+          color: white;
+          &:hover {
+            transition: background-color 0.5s;
+            background-color: #53c2cd;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
   }
 }
+
+@media (min-width: 300px) and (orientation: portrait) {
+  .banner {
+    height: 70rem;
+    .map {
+      margin-bottom: 30rem;
+      .valueprop {
+        bottom: -5rem;
+        width: 100vw;
+        padding: 0 2rem;
+        .valueprop-title {
+          h1 {
+            font-size: 2.7rem;
+          }
+        }
+        .email-form-banner {
+          margin-top: 0rem;
+          width: 100%;
+          input {
+            width: 100%;
+            &:focus {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 440px) and (orientation: portrait) {
+  .banner {
+    .map {
+      margin-bottom: 25rem;
+      .valueprop {
+        bottom: -12rem;
+        left: 5rem;
+        width: 80vw;
+        .valueprop-title {
+          h1 {
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .banner {
+    height: 70rem;
+    .map {
+      margin-bottom: 25rem;
+      .valueprop {
+        bottom: -10rem;
+        left: 5rem;
+        width: 50rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 901px) and (orientation: landscape) {
+  .banner {
+    height: 70rem;
+    .map {
+      margin-bottom: 27rem;
+      .valueprop {
+        bottom: -10rem;
+        left: 15rem;
+        width: 45rem;
+      }
+    }
+  }
+}
+
 .swal2-popup {
   border-radius: 1rem !important;
   padding: 2rem 5rem !important;
@@ -113,83 +195,6 @@
     }
     :hover {
       color: rgba(62, 147, 111, 0.8) !important;
-    }
-  }
-}
-
-@media (max-width: 900px) and (orientation: portrait) {
-  .banner {
-    flex-direction: column-reverse;
-    height: 100vh;
-    .valueprop {
-      background-color: white;
-      width: 100%;
-      padding: 0 2rem;
-      margin-top: 0.5rem;
-      .valueprop-title {
-        text-align: left;
-        h1 {
-          font-size: 3rem;
-        }
-      }
-      .email-form-banner {
-        width: 100%;
-        input {
-          width: 100%;
-        }
-      }
-    }
-    .map {
-      max-width: 100vw;
-      max-height: 35%;
-    }
-  }
-}
-
-@media (max-width: 900px) and (orientation: landscape) {
-  .banner {
-    margin-bottom: 2rem;
-    .valueprop {
-      max-width: 50vw;
-      padding: 2rem;
-      .valueprop-title {
-        h1 {
-          font-size: 3rem;
-        }
-      }
-    }
-    .email-form-banner {
-      width: 100%;
-      input {
-        width: 100%;
-      }
-    }
-    .map {
-      max-width: 50vw;
-    }
-  }
-}
-
-@media (min-width: 901px) and (orientation: landscape) {
-  .banner {
-    .valueprop {
-      flex-grow: 1;
-      padding: 13rem;
-      margin-top: 14rem;
-      margin-right: -25rem;
-    }
-    .email-form-banner {
-      margin-top: 5rem;
-      width: 100%;
-      input {
-        width: 100%;
-        &:focus {
-          width: 100%;
-        }
-      }
-    }
-    .map {
-      width: 70vw;
     }
   }
 }

@@ -110,42 +110,44 @@ export default class Banner extends React.Component {
     const url =
       "https://pading.us8.list-manage.com/subscribe/post?u=f662f9f87cc780ecd97294f34&amp;id=0ef42685e7";
     return (
-      <div className="banner">
-        <div className="valueprop">
-          <div className="valueprop-title">
-            <h1>
-              The travel comparator that brings you closer to your friends and
-              family
-            </h1>
-          </div>
-          <div className="valueprop-details">
-            <p>
-            <b>From different departure cities, explore
-              all common destinations to meet each other at the lowest fare</b>
-            </p>
-          </div>
+      <div>
 
-          <div className="email-form-banner">
-            <MailchimpSubscribe
-              url={url}
-              render={({ subscribe, status, message }) => (
-                <CustomForm
-                  status={status}
-                  message={message}
-                  onValidated={(formData) => subscribe(formData)}
-                />
-              )}
+        <div className="banner">              
+          <div className="map">          
+            <Map
+              budapest={this.scrollToBudapest}
+              naples={this.scrollToNaples}
+              amsterdam={this.scrollToAmsterdam}
+              cordoba={this.scrollToCordoba}
             />
+            <div className="valueprop">
+              <div className="valueprop-title">
+                <h1>
+                  The travel comparator that brings you closer to your friends and
+                  family
+                </h1>
+              </div>
+              <div className="valueprop-details">
+                <p>
+                <b>From different departure cities, explore
+                  all common destinations to meet each other at the lowest fare</b>
+                </p>
+              </div>
+
+              <div className="email-form-banner">
+                <MailchimpSubscribe
+                  url={url}
+                  render={({ subscribe, status, message }) => (
+                    <CustomForm
+                      status={status}
+                      message={message}
+                      onValidated={(formData) => subscribe(formData)}
+                    />
+                  )}
+                />
+              </div>
+            </div>
           </div>
-        </div>
-               
-        <div className="map">          
-          <Map
-            budapest={this.scrollToBudapest}
-            naples={this.scrollToNaples}
-            amsterdam={this.scrollToAmsterdam}
-            cordoba={this.scrollToCordoba}
-          />
         </div>
       </div>
     );
