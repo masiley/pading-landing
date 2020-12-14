@@ -20,14 +20,16 @@
 
   .marker-destination {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 1rem;
     background-color: #3e936f;
     pointer-events: fill;
     height: 3rem;
     width: 5rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     &:focus {
       outline: none;
     }

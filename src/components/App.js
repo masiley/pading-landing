@@ -10,12 +10,12 @@ import Climate from "./Climate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Footer from "./Footer";
 import "./_App.scss";
-import bigLoaderPading from "../img/big-loader-pading.gif";
+import bigLoaderPading from "../img/big-loader-pading.mp4";
 
 export default class App extends React.Component {
 
   scrollToTop() {
-    document.documentElement.scrollTo({
+    document.scrollingElement.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
@@ -29,11 +29,11 @@ export default class App extends React.Component {
         <BrowserRouter>
           <div>
 
-          {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 2000)}
+          {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000)}
            
-            <div id="big-loader">
-              <img src={bigLoaderPading} alt="loader pading app"/>
-            </div>
+            <video id="big-loader" autoPlay="autoplay" muted playsInline>
+              <source src={bigLoaderPading} alt="loader pading app"/>
+            </video>
             
             <NavBar scrollToTop={this.scrollToTop}/>
             <Route exact path="/" component={Banner} />

@@ -1,12 +1,11 @@
 import React from 'react';
 import './_Climate.scss';
-import mapa from '../img/mapa.png';
 
 
 export default function Simple() {
     return (
         <div className="wrapper">
-            <img src="https://common.crowdfarming.com/uploaded-images/1595413996783-e14e18b4-2ea8-4719-8c58-a5ef2e1cabe2.svg" width="100%"></img>
+            <img src="https://common.crowdfarming.com/uploaded-images/1595413996783-e14e18b4-2ea8-4719-8c58-a5ef2e1cabe2.svg" alt="earth planet" width="100%"></img>
             <div className="myclimate">
                 <div className="myclimate-content">
                     <h2>We love our planet</h2>
