@@ -13,9 +13,8 @@ export default class Map extends React.Component {
     viewport: {
       width: "100%",
       height: "100%",
-      latitude: 48.1078,
+      latitude: 37,
       longitude: 0,
-      zoom: 2.5,
       minZoom: 2.5,
       maxZoom: 2.5,
       interactive: false,

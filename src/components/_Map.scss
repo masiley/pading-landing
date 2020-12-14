@@ -1,5 +1,5 @@
 .mapbox {
-  height: 100vh;
+  height: calc(100vh - 7rem);
   width: 100vw;
   pointer-events: none;
   .marker-departure-city {

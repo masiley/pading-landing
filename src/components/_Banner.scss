@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
   min-height: calc(100vh - 7rem);
   .map {
     position: relative;
@@ -13,7 +13,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.8);
       border-radius: 1rem;
       padding: 1rem;
       .valueprop-title {
@@ -73,13 +73,12 @@
   }
 }
 
-@media (min-width: 300px) and (orientation: portrait) {
+@media (min-width: 0px) and (orientation: portrait) {
   .banner {
     height: 70rem;
     .map {
-      margin-bottom: 30rem;
       .valueprop {
-        bottom: -5rem;
+        bottom: 13rem;
         width: 100vw;
         padding: 0 2rem;
         .valueprop-title {
@@ -88,7 +87,6 @@
           }
         }
         .email-form-banner {
-          margin-top: 0rem;
           width: 100%;
           input {
             width: 100%;
@@ -102,14 +100,11 @@
   }
 }
 
-@media (min-width: 440px) and (orientation: portrait) {
+@media (min-width: 450px) and (orientation: portrait) {
   .banner {
     .map {
-      margin-bottom: 25rem;
       .valueprop {
-        bottom: -12rem;
-        left: 5rem;
-        width: 80vw;
+        bottom: 9rem;
         .valueprop-title {
           h1 {
             font-size: 3.2rem;
@@ -120,29 +115,27 @@
   }
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (min-width: 800px) and (orientation: landscape) {
   .banner {
     height: 70rem;
     .map {
-      margin-bottom: 25rem;
       .valueprop {
-        bottom: -10rem;
-        left: 5rem;
-        width: 50rem;
+        bottom: 8rem;
+        left: 15rem;
+        width: 60rem;
       }
     }
   }
 }
 
-@media (min-width: 901px) and (orientation: landscape) {
+@media (min-width: 1351px) and (orientation: landscape) {
   .banner {
     height: 70rem;
     .map {
-      margin-bottom: 27rem;
       .valueprop {
-        bottom: -10rem;
+        bottom: 10rem;
         left: 15rem;
-        width: 45rem;
+        width: 42rem;
       }
     }
   }
