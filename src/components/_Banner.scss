@@ -79,9 +79,10 @@
 @media (max-width: 600px) and (orientation: portrait) {
   .banner {
     height: calc(100vh - 7rem);
+    margin-bottom: 5rem;
     .map {
       .valueprop {
-        bottom: 4rem;
+        bottom: 2rem;
         left: 0rem;
         width: 100vw;
         padding: 0 2rem;
@@ -115,7 +116,7 @@
         display: none;
       }
       .valueprop {
-        bottom: 9rem;
+        bottom: 2rem;
         left: 5rem;
         width: 80vw;
         .valueprop-title {
