@@ -2,6 +2,7 @@ import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Map from "./Map";
 import CustomForm from "./CustomForm";
+import Earth from "../img/mapa1.png"
 import "./_Banner.scss";
 
 export default class Banner extends React.Component {
@@ -34,8 +35,11 @@ export default class Banner extends React.Component {
     return (
       <div>
 
-        <div className="banner">              
+        <div className="banner">
           <div className="map">          
+            <div className="earth">
+                <img src={Earth}/>
+            </div>              
             <Map
               budapest={this.scrollToBudapest}
               naples={this.scrollToNaples}
