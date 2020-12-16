@@ -35,7 +35,7 @@ export default class App extends React.Component {
           {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000)}
 
           { isIOS ? 
-            <div><img src={bigLoaderPadingGif} id="big-loader" /></div>
+            <div id="big-loader"><img src={bigLoaderPadingGif} /></div>
           :
             <video id="big-loader" autoPlay="autoplay" muted playsInline>
               <source src={bigLoaderPadingVideo} alt="loader pading app"/>
