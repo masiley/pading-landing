@@ -21,9 +21,11 @@ export default class App extends React.Component {
     })
   }
 
-  let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-
+  
   render() {
+
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+    
     return (
       <div>
         <BrowserRouter>
