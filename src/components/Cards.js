@@ -48,7 +48,7 @@ export default function Cards() {
                   </div>
                   <div className="carbon-footprint">
                     <p>
-                      <i className="fas fa-cloud"></i> 2.003 t CO2
+                      <i className="fas fa-cloud"></i> 2.003 t
                     </p>
                   </div>
                 </div>

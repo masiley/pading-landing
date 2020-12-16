@@ -49,8 +49,7 @@ export default class Banner extends React.Component {
             <div className="valueprop">
               <div className="valueprop-title">
                 <h1>
-                  The travel comparator that brings you closer to your friends and
-                  family
+                  The travel comparator that brings you closer to your friends
                 </h1>
               </div>
               <div className="valueprop-details">

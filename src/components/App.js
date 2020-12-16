@@ -21,15 +21,17 @@ export default class App extends React.Component {
     })
   }
 
- 
-
+  
   render() {
+
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+    
     return (
       <div>
         <BrowserRouter>
           <div>
 
-          {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000)}
+          { isIOS ? '' : setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000) }
            
             <video id="big-loader" autoPlay="autoplay" muted playsInline>
               <source src={bigLoaderPading} alt="loader pading app"/>

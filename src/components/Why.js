@@ -1,16 +1,24 @@
 import React from 'react';
-import happycats from '../img/happycats.mp4';
+import happyCatsGif from '../img/happycats.gif';
+import happyCatsVideo from '../img/happycats.mp4';
 import './_Why.scss';
 
 
 export default function Why() {
+
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
     return (
         <div className="wrapper">
             <div className="why-to-use-it">
                 <div className="why-to-use-it-gif">
-                    <video className="why-to-use-it-video" autoPlay="autoplay" loop muted playsInline>
-                        <source src={happycats} />
+                    { isIOS ? 
+                    <div><img src={happyCatsGif} className="happy-cats"/></div>
+                    :
+                    <video className="happy-cats" autoPlay="autoplay" loop muted playsInline>
+                        <source src={happyCatsVideo} />
                     </video>
+                    }
                 </div>
                 <div className="why-to-use-it-text" id="why">
                     <div className="why-to-use-it-title">
