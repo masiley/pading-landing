@@ -10,7 +10,8 @@ import Climate from "./Climate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Footer from "./Footer";
 import "./_App.scss";
-import bigLoaderPading from "../img/big-loader-pading.mp4";
+import bigLoaderPadingGif from "../img/big-loader-pading.gif";
+import bigLoaderPadingVideo from "../img/big-loader-pading.mp4";
 
 export default class App extends React.Component {
 
@@ -25,7 +26,7 @@ export default class App extends React.Component {
   render() {
 
     let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-    
+
     return (
       <div>
         <BrowserRouter>
@@ -34,10 +35,10 @@ export default class App extends React.Component {
           {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000)}
 
           { isIOS ? 
-            <div><img src={happyCatsGif} className="big-loader"/></div>
+            <div><img src={bigLoaderPadingGif} className="big-loader"/></div>
           :
             <video id="big-loader" autoPlay="autoplay" muted playsInline>
-              <source src={bigLoaderPading} alt="loader pading app"/>
+              <source src={bigLoaderPadingVideo} alt="loader pading app"/>
             </video>
           }
             
