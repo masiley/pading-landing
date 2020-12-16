@@ -21,21 +21,23 @@ export default class App extends React.Component {
     })
   }
 
-  
-  render() {
+  let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
-    let isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-    
+  render() {
     return (
       <div>
         <BrowserRouter>
           <div>
 
-          { isIOS ? document.getElementById("big-loader").style.display="none" : setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000) }
-           
+          {setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000)}
+
+          { isIOS ? 
+            <div><img src={happyCatsGif} className="big-loader"/></div>
+          :
             <video id="big-loader" autoPlay="autoplay" muted playsInline>
               <source src={bigLoaderPading} alt="loader pading app"/>
             </video>
+          }
             
             <NavBar scrollToTop={this.scrollToTop}/>
             <Route exact path="/" component={Banner} />
