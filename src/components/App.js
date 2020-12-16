@@ -31,7 +31,7 @@ export default class App extends React.Component {
         <BrowserRouter>
           <div>
 
-          { isIOS ? '' : setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000) }
+          { isIOS ? document.getElementById("big-loader").style.display="none" : setTimeout(() => document.getElementById("big-loader").style.visibility="hidden", 3000) }
            
             <video id="big-loader" autoPlay="autoplay" muted playsInline>
               <source src={bigLoaderPading} alt="loader pading app"/>
