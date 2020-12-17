@@ -120,7 +120,7 @@
         width: 100%;
         text-align: center;
         .happy-cats {
-          max-width: 30rem;
+          width: 100%;
         }
       }
     }
@@ -148,7 +148,7 @@
         width: 100%;
         text-align: center;
         .happy-cats {
-          max-width: 33rem;
+          width: 100%;
         }
       }
     }
@@ -156,7 +156,7 @@
 }
 
 // tablet screens portrait
-@media (min-width: 1000px) and (orientation: portrait) {
+@media (min-width: 901px) and (orientation: portrait) {
   .wrapper {
     .why-to-use-it {
       display: flex;

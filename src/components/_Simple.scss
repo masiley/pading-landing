@@ -15,7 +15,37 @@
   }
 }
 
-// extra-small screens
+@media (max-width: 320px) and (orientation: portrait) {
+  .wrapper {
+    .simple-solution {
+      .simple-solution-gif {
+        text-align: center;
+        border: solid orange;
+        width: 100%;
+        .catsbasket {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 321px) and (orientation: portrait) {
+  .wrapper {
+    .simple-solution {
+      .simple-solution-gif {
+        text-align: center;
+        border: solid orange;
+        width: 100%;
+        .catsbasket {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// small screens
 @media (max-width: 900px) {
   .wrapper {
     .simple-solution {
@@ -25,7 +55,7 @@
   }
 }
 
-// small screens
+// tablet screens portrait
 @media (min-width: 901px) {
   .wrapper {
     .simple-solution {
@@ -40,7 +70,7 @@
   }
 }
 
-// normal and big screens
+// laptop and computer screens
 @media (min-width: 1201px) {
   .wrapper {
     .simple-solution {

@@ -144,7 +144,7 @@
         bottom: 0rem;
         left: 0rem;
         width: 100vw;
-        padding: 0 2rem;
+        padding: 0 5rem;
         height: calc(100vh - 7rem);
         background-color: white;
         .valueprop-title {
@@ -177,15 +177,26 @@
   }
 }
 
-@media (min-width: 1300px) and (orientation: landscape) {
+@media (min-width: 901px) and (orientation: landscape) {
   .banner {
-    height: 70rem;
     .map {
       .earth {
         display: none;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  .banner {
+    height: 70rem;
+    .map {
+      margin: none;
+      .earth {
+        display: none;
+      }
       .valueprop {
-        bottom: 10rem;
+        bottom: 7rem;
         left: 10rem;
         width: 45rem;
       }
