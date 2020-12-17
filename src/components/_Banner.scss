@@ -2,64 +2,94 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   min-height: calc(100vh - 7rem);
   .map {
-    position: relative;
     height: 100%;
     .earth {
       img {
         width: 100vw;
       }
     }
-    .valueprop {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 1rem;
-      padding: 1rem;
-      .email-form-banner {
-        position: relative;
+  }
+  .valueprop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    .email-form-banner {
+      position: relative;
+      text-align: left;
+      background: transparent;
+      width: 100%;
+      input {
+        font-family: "Roboto", sans-serif;
+        height: 5.5rem;
+        width: 100%;
+        font-weight: 400;
+        background: white;
+        color: #373737;
+        border: solid #29b3c1;
         text-align: left;
-        background: transparent;
-        margin-top: 2rem;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        padding: 1rem;
+        &:focus {
+          width: 100%;
+          transition-duration: 0.5s;
+          outline: 0;
+        }
+      }
+      .btn-blue {
+        position: absolute;
+        right: 0rem;
+        height: 5.5rem;
+        padding: 0 2rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #29b3c1;
+        color: white;
+        &:hover {
+          transition: background-color 0.5s;
+          background-color: #53c2cd;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .banner {
+    height: calc(100vh - 7rem);
+    margin-bottom: 5rem;
+    .map {
+    }
+    .valueprop {
+      bottom: 2rem;
+      left: 0rem;
+      width: 100vw;
+      padding: 0 2rem;
+      .valueprop-title {
+        text-align: center;
+      }
+      .valueprop-details {
+        text-align: center;
+      }
+      .email-form-banner {
         width: 100%;
         input {
-          font-family: "Roboto", sans-serif;
-          height: 5.5rem;
           width: 100%;
-          font-weight: 400;
-          background: white;
-          color: #373737;
-          border: solid #29b3c1;
-          text-align: left;
-          border-radius: 1rem;
-          font-size: 1.6rem;
-          padding: 1rem;
           &:focus {
             width: 100%;
-            transition-duration: 0.5s;
-            outline: 0;
-          }
-        }
-        .btn-blue {
-          position: absolute;
-          right: 0rem;
-          height: 5.5rem;
-          padding: 0 2rem;
-          border-radius: 1rem;
-          border: none;
-          background-color: #29b3c1;
-          color: white;
-          &:hover {
-            transition: background-color 0.5s;
-            background-color: #53c2cd;
-          }
-          &:focus {
-            outline: none;
           }
         }
       }
@@ -76,101 +106,71 @@
   }
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px) and (orientation: landscape) {
   .banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: calc(100vh - 7rem);
-    margin-bottom: 5rem;
     .map {
-      .valueprop {
-        bottom: 2rem;
-        left: 0rem;
-        width: 100vw;
-        padding: 0 2rem;
-        .valueprop-title {
-          text-align: center;
-          h1 {
-            font-size: 3rem;
-          }
+      width: 70%;
+      .earth {
+        display: none;
+      }
+    }
+    .valueprop {
+      bottom: 0rem;
+      left: 0rem;
+      width: 27rem;
+      .valueprop-title {
+        h1 {
+          font-size: 2.3rem;
         }
-        .valueprop-details {
-          text-align: center;
-        }
-        .email-form-banner {
-          width: 100%;
-          input {
-            width: 100%;
-            &:focus {
-              width: 100%;
-            }
-          }
-        }
+      }
+      .email-form-banner {
+        margin-top: 0.5rem;
       }
     }
   }
 }
 
-@media (min-width: 601px) and (orientation: portrait) {
+@media (min-width: 601px) and (orientation: landscape) {
   .banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: calc(100vh - 7rem);
     .map {
+      width: 60%;
       .earth {
         display: none;
       }
-      .valueprop {
-        bottom: 2rem;
-        left: 5rem;
-        width: 80vw;
-        .valueprop-title {
-          text-align: left;
-          h1 {
-            font-size: 3.2rem;
-          }
+    }
+    .valueprop {
+      bottom: 0rem;
+      left: 0rem;
+      width: 35rem;
+      .valueprop-title {
+        h1 {
+          font-size: 2.7rem;
         }
-        .valueprop-details {
-          text-align: left;
-        }
+      }
+      .email-form-banner {
+        margin-top: 2rem;
       }
     }
   }
 }
 
-@media (max-height: 600px) and (orientation: landscape) {
+@media (min-width: 750px) and (orientation: landscape) {
   .banner {
-    .map {
-      .earth {
-        display: none;
-      }
-      .valueprop {
-        top: 0rem;
-        bottom: 0rem;
-        left: 0rem;
-        width: 100vw;
-        padding: 0 5rem;
-        height: calc(100vh - 7rem);
-        background-color: white;
-        .valueprop-title {
-          h1 {
-            font-size: 3.2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-height: 601px) and (orientation: landscape) {
-  .banner {
-    .map {
-      .earth {
-        display: none;
-      }
-      .valueprop {
-        bottom: 2rem;
-        left: 5rem;
-        width: 45rem;
-        .valueprop-title {
-          h1 {
-            font-size: 3.2rem;
-          }
+    .valueprop {
+      bottom: 3rem;
+      left: 3rem;
+      width: 40rem;
+      .valueprop-title {
+        h1 {
+          font-size: 3.5rem;
         }
       }
     }
@@ -179,27 +179,30 @@
 
 @media (min-width: 901px) and (orientation: landscape) {
   .banner {
+    height: 70rem;
     .map {
+      width: 70%;
       .earth {
         display: none;
       }
+    }
+    .valueprop {
+      bottom: 25rem;
+      left: 5rem;
+      width: 45rem;
     }
   }
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
   .banner {
-    height: 70rem;
     .map {
-      margin: none;
-      .earth {
-        display: none;
-      }
-      .valueprop {
-        bottom: 7rem;
-        left: 10rem;
-        width: 45rem;
-      }
+      width: 75%;
+    }
+    .valueprop {
+      bottom: 25rem;
+      left: 15rem;
+      width: 45rem;
     }
   }
 }

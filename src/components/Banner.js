@@ -46,7 +46,9 @@ export default class Banner extends React.Component {
               amsterdam={this.scrollToAmsterdam}
               cordoba={this.scrollToCordoba}
             />
-            <div className="valueprop">
+          </div>
+
+          <div className="valueprop">
               <div className="valueprop-title">
                 <h1>
                   The travel comparator that brings you closer to your friends
@@ -72,7 +74,7 @@ export default class Banner extends React.Component {
                 />
               </div>
             </div>
-          </div>
+
         </div>
       </div>
     );

@@ -30,7 +30,7 @@ export default function Faq() {
   return (
     <div className={classes.root}>
       <div>
-        <img src={simplelogo} width="50px"/>
+        <img src={simplelogo} alt="logo pading" width="50px"/>
       </div>
       <ExpansionPanel>
         <ExpansionPanelSummary
@@ -39,7 +39,7 @@ export default function Faq() {
           id="panel1a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p><div className="focus-text"><span className="underline"></span>Who are you</div> behind Pading ?</p>
+            <p><div className="focus-text"><span className="underline"></span>Who are you</div> behind Pading?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -59,7 +59,7 @@ export default function Faq() {
           id="panel2a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>Why should I <div className="focus-text"><span className="underline"></span>use Pading ?</div></p>
+            <p>Why should I <div className="focus-text"><span className="underline"></span>use Pading?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -88,7 +88,7 @@ export default function Faq() {
           id="panel3a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>How does Pading finds the <div className="focus-text"><span className="underline"></span>cheapest prices ?</div></p>
+            <p>How does Pading finds the <div className="focus-text"><span className="underline"></span>cheapest prices?</div></p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -108,7 +108,7 @@ export default function Faq() {
           id="panel4a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>Why organizing our next meeting with Pading is <div className="focus-text"><span className="underline"></span>so easy ?</div></p>
+            <p>Why organizing our next meeting with Pading is <div className="focus-text"><span className="underline"></span>so easy</div>?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -139,7 +139,7 @@ export default function Faq() {
           id="panel5a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>What <div className="focus-text"><span className="underline"></span>means of transport</div> can be booked ?</p>
+            <p>What <div className="focus-text"><span className="underline"></span>means of transport</div> can be booked?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -157,7 +157,7 @@ export default function Faq() {
           id="panel6a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>How <div className="focus-text"><span className="underline"></span>concerns for ecology</div> are integrated into Pading ?</p>
+            <p>How <div className="focus-text"><span className="underline"></span>concerns for ecology</div> are integrated into Pading?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -184,7 +184,7 @@ export default function Faq() {
           id="panel7a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>How Pading can be <div className="focus-text"><span className="underline"></span>100% free ?</div></p>
+            <p>How Pading can be <div className="focus-text"><span className="underline"></span>100% free</div>?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -212,7 +212,7 @@ export default function Faq() {
           id="panel8a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>Who are <div className="focus-text"><span className="underline"></span>Kiwi and Trainline, the two partners</div> you are working with ?</p>
+            <p>Who are Kiwi and Trainline, the two <div className="focus-text"><span className="underline"></span>partners</div> you are working with?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -235,7 +235,7 @@ export default function Faq() {
           id="panel9a-header"
         >
           <Typography className={`${classes.heading} faq-title`}>
-            <p>What is Pading's <div className="focus-text"><span className="underline"></span>vision of travel ?</div></p>
+            <p>What is Pading's <div className="focus-text"><span className="underline"></span>vision of travel</div>?</p>
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
