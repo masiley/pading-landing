@@ -13,12 +13,10 @@ export default class Map extends React.Component {
     viewport: {
       width: "100%",
       height: "100%",
-      latitude: 50,
-      longitude: 0,
-      minZoom: 2.5,
-      maxZoom: 2.5,
-      interactive: false,
-      attributionControl: false
+      latitude: 42,
+      longitude: 5,
+      zoom: 3,
+      zoomControl: false
     }
   };
 
@@ -29,8 +27,9 @@ export default class Map extends React.Component {
         <ReactMapGL
         {...this.state.viewport}
         mapboxApiAccessToken="pk.eyJ1IjoibG91aXMxNDA0IiwiYSI6ImNrNm0zOGFkMDBqdG8zZXA3NGR5ejhzYnQifQ.Yt9WzWg8hdm6b9h5k5sxHw"
-        mapStyle="mapbox://styles/louis1404/ckbfbhg8x21z51ik4rb1ylkrn"
+        mapStyle="mapbox://styles/louis1404/ck6m5f35i0ucc1impooorg2qu"
         onViewportChange={(viewport) => this.setState({ viewport })}
+        width="dummyValue"
         >        
           <Marker latitude={55.86515} longitude={-4.25763}>
             <div className="marker-departure-city">

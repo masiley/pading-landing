@@ -2,7 +2,6 @@ import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Map from "./Map";
 import CustomForm from "./CustomForm";
-import Earth from "../img/mapa1.png"
 import "./_Banner.scss";
 
 export default class Banner extends React.Component {
@@ -36,10 +35,7 @@ export default class Banner extends React.Component {
       <div>
 
         <div className="banner">
-          <div className="map">          
-            <div className="earth">
-                <img src={Earth}/>
-            </div>              
+          <div className="map">                       
             <Map
               budapest={this.scrollToBudapest}
               naples={this.scrollToNaples}
@@ -51,12 +47,12 @@ export default class Banner extends React.Component {
           <div className="valueprop">
               <div className="valueprop-title">
                 <h1>
-                  The travel comparator that brings you closer to your friends
+                  Flights and trains for friends coming from multiple places
                 </h1>
               </div>
               <div className="valueprop-details">
                 <p>
-                <b>From different departure cities, explore
+                <b>Enter your different departure cities, explore
                   all common destinations to meet each other at the lowest fare</b>
                 </p>
               </div>
