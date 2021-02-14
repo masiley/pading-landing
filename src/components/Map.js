@@ -15,7 +15,7 @@ export default class Map extends React.Component {
       height: "100%",
       latitude: 42,
       longitude: 5,
-      zoom: 3,
+      zoom: 2.8,
       zoomControl: false
     }
   };
