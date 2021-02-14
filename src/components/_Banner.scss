@@ -13,8 +13,6 @@
   }
   .valueprop {
     position: absolute;
-    margin-left: 2rem;
-    width: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,8 +69,27 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .valueprop {
+    bottom: 3rem;
+    width: 33rem;
+    border: solid orange;
+    .valueprop-title {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    .valueprop-details {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  .valueprop {
+    width: 35rem;
     bottom: 5rem;
     left: 5rem;
   }
@@ -80,6 +97,7 @@
 
 @media (min-width: 1201px) {
   .valueprop {
+    width: 35rem;
     bottom: 8rem;
     left: 10rem;
   }
