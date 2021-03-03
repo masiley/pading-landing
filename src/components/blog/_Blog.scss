@@ -1,0 +1,84 @@
+.blogposts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .post {
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        vertical-align: top;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        img {
+            border-radius: 0.5rem;
+            max-width: 100%;
+            height: auto;
+            margin: 0 0 0.5rem;
+        }
+        h3 {
+            margin: 0.5em 0 0.5em;
+            color: #262626;
+            font-size: 1.6em;
+        }
+        p {
+            margin: 0.5em 0 1.5em;
+            color: #5f5f5f;
+        }
+        .btn-post {
+            padding: 0 2rem;
+            height: 4.5rem;
+            border-radius: 0.5rem;
+            border: none;
+            background-color: #29b3c1;
+            color: white;
+            font-weight: 700;
+            &:hover {
+              transition: background-color 0.5s;
+              background-color: #53c2cd;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+    }
+    .load-more-btn {
+      margin-top: 10rem;
+      padding: 0 2rem;
+      height: 4.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: #29b3c1;
+      color: white;
+      font-weight: 700;
+      margin-bottom
+      &:hover {
+        transition: background-color 0.5s;
+        background-color: #53c2cd;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+}
+
+
+
+  
+
+  
+  
+  
+  
+  
+  
+ 

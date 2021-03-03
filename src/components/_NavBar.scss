@@ -27,9 +27,13 @@
       align-items: center;
       justify-content: center;
       margin-right: 1rem;
+      .blog {
+        margin-right: 2rem;
+      }
       a {
         background: transparent;
         width: 5rem;
+        text-decoration: none;
 
         color: #3e936f;
       }

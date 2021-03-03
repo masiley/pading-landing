@@ -9,6 +9,8 @@ import Cards from "./Cards";
 import Climate from "./Climate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Footer from "./Footer";
+import Blog from "./blog/Blog";
+import BlogPost1 from "./blog/BlogPost1";
 import "./_App.scss";
 import bigLoaderPadingGif from "../img/big-loader-pading.gif";
 import bigLoaderPadingVideo from "../img/big-loader-pading.mp4";
@@ -49,6 +51,8 @@ export default class App extends React.Component {
             <Route exact path="/" component={How} />
             <Route exact path="/" component={Simple} />
             <Route exact path="/" component={Climate} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/bookyourtripwithpading" component={BlogPost1} />
             <Route path="/privacypolicy" component={PrivacyPolicy} />
             <Footer scrollToTop={this.scrollToTop} />
           </div>

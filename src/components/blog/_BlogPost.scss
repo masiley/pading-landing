@@ -1,0 +1,95 @@
+.blogpost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    h1 {
+        margin: 5rem 2rem;
+        text-align: center;
+    }
+    img {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 1rem;   
+    }
+    .blogpost-signature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 1rem 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 5rem;
+        p {
+            line-height: 0.7rem;
+        }
+        .avatar {
+            width: 4rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .blogpost-signature-content {
+            flex-grow: 1;
+            padding: 0 2.5rem;
+            p {
+                font-size: 1.4rem;
+                text-align: left;
+            }
+        }
+    }
+    .content {
+        text-align: justify;
+        .content-intro {
+            font-weight: bold;
+        }
+        .content-core {
+            p {
+                .focus-text {
+                    position: relative;
+                    display: inline-block;
+                }
+                .underline {
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                    bottom: 0.2rem;
+                    height: 0;
+                    border: 0.4rem solid #f6b040;
+                    border-radius: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+// small screens
+@media (max-width: 991px) {
+    .blogpost {
+        img {
+            width: 90%;
+        }
+        .blogpost-signature {
+            width: 90%;
+        }
+        .content {
+            width: 90%;
+        }
+    }  
+} 
+
+  @media (min-width: 992px) {
+    .blogpost {
+        img {
+            width: 65%;
+        }
+        .blogpost-signature {
+            width: 65%;
+        }
+        .content {
+            width: 65%;
+            
+        }
+    }
+  }

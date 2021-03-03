@@ -16,6 +16,7 @@ export default class NavBar extends React.Component {
         </div>
         <div className="navbar-menu">
           <div className="navbar-social">
+          <Link className="blog" to="/blog" onClick={this.props.scrollToTop}><h4>Blog</h4></Link>
             <a
               href="https://www.facebook.com/Pading-103563007939325/?view_public_for=103563007939325"
               rel="noopener noreferrer"
